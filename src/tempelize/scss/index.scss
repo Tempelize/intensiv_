@@ -1,5 +1,10 @@
 // directive scss pour importer un fichier sans le '_' et sans l'extension  !!!!!!!!!!!
 
+//IMPORT DE LA LIBRAIRIE FONTAWESOME
+@import "./lib/fontawesome/all.min.css";
+// d'après la directive fontawesome et chemin est indiqué dans le fichier all.min.css */
+// qui est la version minifiée
+
 // IMPORT DU FICHIER INITIALISATION (VARIABLES COMMUNES AU FRAMEWORK)
 @import "./modules/init";
 
@@ -9,3 +14,5 @@
 @import "./modules/colors";
 @import "./modules/typographie";
 @import "./modules/helpers";
+@import "./modules/menus";
+@import "./modules/design";

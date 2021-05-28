@@ -1,0 +1,15 @@
+// DESIGN
+//------------------------------------------
+// CLASS DISPONIBLES
+// .cercle => bordure en cercle autour de l'élément
+//------------------------------------------
+// VARIABLES
+$encadrement-rond-type-epaisseur: double 0.5px;
+$encadrement-rond-distance-interieur: 0.5rem;
+//---------------------------------------------
+// MODULE SPECIFICATIONS
+.cercle {
+	border: $encadrement-rond-type-epaisseur;
+	border-radius: 50%;
+	padding: $encadrement-rond-distance-interieur;
+}

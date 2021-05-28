@@ -1,0 +1,80 @@
+// LISTS
+//---------------------------------
+// CLASS DISPONIBLES
+// .list-style-none => suppression puces
+// .alternate => background différent une ligne sur deux
+// .menu-horizontal => pour placer un ul>li horizontalement
+//------------------------------------
+// VARIABLES
+$ul-padding-left: 0;
+$ul-li-list-style: square;
+
+$ol-padding-left: 0;
+$ol-li-list-style: lower-alpha;
+
+$li-color-alternate: $color-2;
+$li-color-alternate-hover: lighten($li-color-alternate, 20%);
+
+//--------------------------------------
+// MODULE SPECIFICATIONS
+ul {
+	padding-left: $ul-padding-left;
+
+	li {
+		list-style: $ul-li-list-style;
+	}
+	&.alternate {
+		li:nth-child(even) {
+			color: $li-color-alternate;
+			:hover {
+				color: $li-color-alternate-hover;
+			}
+			a {
+				color: $li-color-alternate;
+				:hover {
+					color: $li-color-alternate-hover;
+				}
+			}
+		}
+	}
+}
+
+ol {
+	padding-left: $ol-padding-left;
+	li {
+		list-style: $ol-li-list-style;
+	}
+	&.alternate {
+		li:nth-child(even) {
+			color: $li-color-alternate;
+			:hover {
+				color: $li-color-alternate-hover;
+			}
+			a {
+				color: $li-color-alternate;
+				:hover {
+					color: $li-color-alternate-hover;
+				}
+			}
+		}
+	}
+}
+
+// HELPERS --------------------------
+.list-style-none {
+	li {
+		list-style: none;
+	}
+}
+
+.menu-horizontal {
+	li {
+		display: inline-block;
+		a {
+			display: block;
+		}
+	}
+	li:not(:last-of-type) {
+		margin-right: 2rem;
+	}
+}
