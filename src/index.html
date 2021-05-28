@@ -301,5 +301,98 @@
 			</table>
 		</section>
 		<div class="lineSeparator"></div>
+		 <!-- BUTTONS -->
+		 <section>
+			<h4 class="h4">BUTTONS</h4>
+			<div>
+				 <button class="primary">[PRIMARY]</button>
+				 <button>DEFAULT</button>
+			</div>
+			<div>
+				 <button class="primary large">[LARGE]</button>
+				 <button class="">DEFAULT</button>
+				 <button class="small">[SMALL]</button>
+			</div>
+			<div class="grid">
+				 <div class="m-col-6">
+					  <button class="primary stretch small">[STRETCH]+[SMALL]</button>
+				 </div>
+				 <div class="m-col-6">
+					  <button class="stretch small">[STRETCH]+[SMALL]</button>
+				 </div>
+			</div>
+			<div class="grid">
+				 <div class="m-col-6">
+					  <button class="primary stretch">[STRETCH]</button>
+				 </div>
+				 <div class="m-col-6">
+					  <button class="stretch">[STRETCH]</button>
+				 </div>
+			</div>
+			<div class="grid">
+				 <div class="m-col-6">
+					  <button class="primary stretch large">[STRETCH]+[LARGE]</button>
+				 </div>
+				 <div class="m-col-6">
+					  <button class="stretch large">[STRETCH]+[LARGE]</button>
+				 </div>
+			</div>
+			<div>
+				 <button class="primary"><i class="fas fa-search"></i>ICON</button>
+				 <button><i class="fas fa-download"></i>ICON</button>
+			</div>
+			<div>
+				 <button class="primary disabled">[PRIMARY]</button>
+				 <button class="disabled">DEFAULT</button>
+			</div>
+			</button>
+	  </section>
+	  <div class="lineSeparator"></div>
+	  <!-- FORM  -->
+	  <section>
+			<h4 class="h4">BUTTONS</h4>
+			<form class="formulaire-1 grid" action="./message_form.html" method="GET">
+				 <div class="s-col-6">
+					  <input type="text" name="name" placeholder="Name">
+				 </div>
+				 <div class="s-col-6">
+					  <input type="email" name="email" placeholder="Email">
+				 </div>   
+				 <div>
+					  <select name="category" id="category">
+							<option value="" disabled="disabled" selected="selected">-Category-</option>
+							<option value="category-1">Categorie 1</option>
+							<option value="category-2">Categorie 2</option>
+							<option value="category-3">Categorie 3</option>
+							<option value="category-4">Categorie 4</option>
+					  </select>
+				 </div>
+				 <div class="input-radio">
+					  <label for="radio-1">
+							<input id="radio-1" type="radio" name="level" value="low" checked="checked">Low
+					  </label>
+					  <label for="radio-2">
+							<input id="radio-2" type="radio" name="level" value="normal">Normal
+					  </label>
+					  <label for="radio-3">
+							<input id="radio-3" type="radio" name="level" value="high">High
+					  </label>
+				 </div>
+				 <div>
+					  <input type="checkbox" name="copyemail">Email me a copy
+					  <input type="checkbox" name="human" checked="checked">I am a human
+				 </div>
+				 <div>
+					  <textarea name="message" id="message" cols="30" rows="10">Enter your message
+					  </textarea>
+				 </div>
+				 <div>
+					  <input type="submit">
+					  <input type="reset">
+				 </div>
+ 
+			</form>
+	  </section>
+	  <div class="lineSeparator"></div>
 	</body>
 </html>

@@ -1,0 +1,76 @@
+// FORMULAIRES
+//-----------------------------------------------------
+// CLASS DISPONIBLES
+// .input-radio => pour boutons radio
+//-----------------------------------------------------
+// VARIABLES
+$input-height: 50px;
+$input-padding: 0;
+$input-width: 100%;
+
+$input-radio-margin-left: 150px;
+
+$input-select-width: 100%;
+$input-select-height: 50px;
+$input-select-padding-left: 10px;
+//-------------------------------------------------------------------------------------------------------------
+// MODULE SPECIFICATIONS
+form {
+	input {
+	}
+	:not([type="radio"], [type="checkbox"], [type="submit"], [type="reset"]) {
+		height: $input-height;
+		padding: $input-padding;
+		width: $input-width;
+	}
+
+	.input-radio {
+		label:not(:first-of-type) {
+			margin-left: $input-radio-margin-left;
+		}
+	}
+
+	select {
+		width: $input-select-width;
+		height: $input-select-height;
+		padding-left: $input-select-padding-left;
+	}
+	[type="submit"] {
+		width: $button-width;
+		height: $button-height;
+		background: $button-background-primary;
+		color: $button-color-primary;
+		margin: $button-margin;
+		border: $button-border;
+		border-radius: $button-border-radius;
+		margin: $button-margin;
+		padding: $button-padding;
+		font-family: $button-font;
+		font-size: $button-font-size-default;
+		box-shadow: $button-box-shadow;
+		&:hover {
+			background: $button-background-primary-hover;
+			color: $button-color-primary-hover;
+			box-shadow: $button-box-shadow-hover;
+		}
+	}
+	[type="reset"] {
+		width: $button-width;
+		height: $button-height;
+		background: $button-background-default;
+		color: $button-color-default;
+		margin: $button-margin;
+		border: $button-border;
+		border-radius: $button-border-radius;
+		margin: $button-margin;
+		padding: $button-padding;
+		font-family: $button-font;
+		font-size: $button-font-size-default;
+		box-shadow: $button-box-shadow;
+		&:hover {
+			background: $button-background-default-hover;
+			color: $button-color-default-hover;
+			box-shadow: $button-box-shadow-hover;
+		}
+	}
+}

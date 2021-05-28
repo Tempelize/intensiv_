@@ -2,3 +2,5 @@ node_modules
 dist
 .cache
 src/documents
+package-lock.json
+package.json
