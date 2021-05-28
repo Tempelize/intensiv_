@@ -8,6 +8,10 @@
 // .xl
 //-------------------------------------------------------------------------------
 // VARIABLES
+$box-width-default: 100%;
+$box-border: solid 1px;
+$box-border-color: $color-neutral-2;
+$box-padding: 1rem;
 //-------------------------------------------------------------------------------
 // MODULE SPECIFICATIONS
 @use "sass:map";
@@ -61,3 +65,18 @@
 // 		"container-size": 1140px,
 // 	),
 // );
+.box {
+	width: $box-width-default;
+	border: $box-border;
+	border-color: $box-border-color;
+	padding: $box-padding;
+}
+$pourcent: "%";
+@for $var from 0 through 100 {
+	.box-width-#{$var} {
+		width: #{$var}#{$pourcent};
+	}
+	.box-height-#{$var} {
+		height: #{$var}#{$pourcent};
+	}
+}
