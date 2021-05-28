@@ -1,0 +1,62 @@
+// IMAGES
+//---------------------------------------------------------------------
+// CLASS DISPONIBLES
+// .stretch => image étendie dans son container
+// .thumbnails => galerie images
+// .largeur-img-100 à 400 => largeur <img> du thumbnails de 100 à 400 px
+// .hauteur-img-100 à 400 => idem hauteur
+// .float-left
+// .float-right
+// .float-container-clear => container englobant l'ensemble du float pour replacer ce qui suit dans le flux
+//------------------------------------------------------------------------
+// VARIABLES
+$image-margin: 1rem;
+$image-zoom-hover: 1.04;
+$image-thumbnails-margin: 0.5rem;
+$image-float-left-margin: 0 1rem 1rem 0;
+$image-float-right-margin: 0 0 1rem 1rem;
+$image-float-width: 40%;
+//-------------------------------------------------------------------------
+// MODULE SPECIFICATIONS
+
+img {
+	margin: $image-margin;
+	&.stretch {
+		width: 100%;
+		height: 100%;
+	}
+	&.zoom:hover {
+		transform: scale($image-zoom-hover);
+	}
+}
+
+.thumbnails {
+	margin: $image-thumbnails-margin;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-content: space-between;
+	@for $var from 100 through 400 {
+		&.largeur-img-#{$var} img {
+			width: #{$var}px;
+		}
+		&.hauteur-img#{$var} img {
+			height: #{$var}px;
+		}
+	}
+}
+.float-left {
+	float: left;
+	width: $image-float-width;
+	margin: $image-float-left-margin;
+}
+.float-right {
+	float: right;
+	width: $image-float-width;
+	margin: $image-float-right-margin;
+}
+.float-container-clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
