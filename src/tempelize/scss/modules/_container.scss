@@ -1,0 +1,63 @@
+//CONTAINERS
+//------------------------------------------------------------------------------
+// CLASS DISPONIBLES
+// .xs => détermine la dimension du container d'après la taille de l'écran ($screen-sizes voir _init.scss)
+// .s
+// .m
+// .l
+// .xl
+//-------------------------------------------------------------------------------
+// VARIABLES
+//-------------------------------------------------------------------------------
+// MODULE SPECIFICATIONS
+@use "sass:map";
+
+// $screen-sizes: (("-xs", 0, auto), ("-s", 576px, 540px), ("-m", 768px, 720px), ("-l", 992px, 960px), ("-xl", 1200px, 1140px), ("-xxl", 1400px, 1320px));
+
+// @each $label, $breakpoint, $containerWidth in $screen-sizes {
+// 	@media screen and (min-width:#{$breakpoint}) {
+// 		.container {
+// 			width: #{$containerWidth};
+// 			margin: 0 auto;
+// 			padding: 0 1rem;
+// 		}
+// 	}
+// }
+
+// screen-sizes = tableau contenant une variable et un tableau (map)
+// $label = (xs,s,m,l,xl)
+// $values = ("breakpoint","container-size")
+@each $label, $values in $screen-sizes {
+	//Tous les écrans à partir de (min-width)
+	@media screen and (min-width: map-get($values, "breakpoint")) {
+		.container {
+			width: 100%;
+			max-width: map-get($values, "container-size");
+			margin: 0 auto;
+			padding: 0 1rem;
+		}
+	}
+}
+
+// $screen-sizes: (
+// 	"xs": (
+// 		"breakpoint": 0,
+// 		"container-size": 100%,
+// 	),
+// 	"s": (
+// 		"breakpoint": 576px,
+// 		"container-size": 540px,
+// 	),
+// 	"m": (
+// 		"breakpoint": 768px,
+// 		"container-size": 720px,
+// 	),
+// 	"l": (
+// 		"breakpoint": 992px,
+// 		"container-size": 960px,
+// 	),
+// 	"xl": (
+// 		"breakpoint": 1200px,
+// 		"container-size": 1140px,
+// 	),
+// );

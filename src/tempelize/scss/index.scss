@@ -1,3 +1,8 @@
 // directive scss pour importer un fichier sans le '_' et sans l'extension  !!!!!!!!!!!
 
+// IMPORT DU FICHIER INITIALISATION (VARIABLES COMMUNES AU FRAMEWORK)
+@import "./modules/init";
+
 // IMPORT DES MODULES DU FRAMEWORK
+@import "./modules/container";
+@import "./modules/grid";
