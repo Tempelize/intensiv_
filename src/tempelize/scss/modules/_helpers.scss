@@ -1,0 +1,62 @@
+//  HELPERS
+//----------------------------------------------
+// CLASS DISPONIBLES
+//----------------------------------------------
+// .display-block => display
+// .display-inlineblock
+// .display-inline
+// .display-none
+// .text-center => text-align
+// .text-left
+// .text-right
+// .line-separator => ligne de séparation
+//------------------------------------------------
+// VARIABLES
+//----------------------------------------------
+//lineSeparator
+$lineSeparatorWith: 100%;
+$lineSeparatorThick: 1px;
+$lineSeparatorMarginTop: 1rem;
+$lineSeparatorColor: $color-neutral-2;
+//-----------------------------------------------
+// MODULE SPECIFICATIONS
+
+//class active pour les liens
+
+// .isActif {
+// 	background: $colorHot;
+// 	color: $colorLight;
+// 	&:hover {
+// 		background: $colorDark;
+// 		color: $colorHot;
+// 	}
+// }
+
+// DISPLAY
+.display-block {
+	display: block;
+}
+.display-inlineblock {
+	display: inline-block;
+}
+.display-inline {
+	display: inline;
+}
+.display-none {
+	display: none;
+}
+.text-center {
+	text-align: center;
+}
+.text-left {
+	text-align: left;
+}
+.text-right {
+	text-align: right;
+}
+.line-separator {
+	border-bottom: $lineSeparatorThick solid;
+	width: $lineSeparatorWith;
+	margin: $lineSeparatorMarginTop auto;
+	color: $lineSeparatorColor;
+}

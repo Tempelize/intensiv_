@@ -1,0 +1,440 @@
+// TYPOGRAPHIE
+
+// METHODE 1 PAR TELECHARGEMENT DE LA POLICE DANS LE PROJET
+//----------------------------------------------------------
+// Pour pouvoir intégrer notre propre police (ici Futura)
+// permet de définir notre propre font family
+// police doit être transformée pour le format web (format woff ou woff2) via fontsquirrel p exemple
+// il faut l'importer mais on va utiliser une variable pour déclarer la typographie
+// @font-face {
+// 	font-family: "futura"; // famille que l'on va déclarer dans notre projet
+// 	src: url("./../fonts/futura.woff2") format("woff2"), url("./../fonts/futura.woff") format("woff"); // chemin vers notre typo d'abord la plus récente
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// @font-face {
+// 	font-family: "aller"; // famille que l'on va déclarer dans notre projet
+// 	src: url("./../fonts/aller.woff2") format("woff2"), url("./../fonts/aller.woff") format("woff"); // chemin vers notre typo d'abord la plus récente
+// 	font-weight: normal;
+// 	font-style: normal;
+// }
+
+// METHODE 2 PAR APPEL D'UNE POLICE EN LIGNE
+//------------------------------------------
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
+//----------------------------------------------------------------------
+// CLASS DISPONIBLES
+// .h1,.h2,.h3,.h4,.h5,.h6 => typo comme h1,......
+// .code => <code></code>
+// .mark => <mark></mark>
+// .bold => <strong></strong>
+// .italic => en italic
+// .underlined => soulignement
+// .link => <a></a> liens
+// // TITRES - SOUS-TITRES - PARAGRAPHES
+// .title-1 => typo titre niveau 1
+// .title-2
+// .title-3
+// .sub-title-1 => typo sous titre niveau 1
+// .sub-title-2
+// .sub-title-3
+// .p-1  => typo paragraphe niveau 1
+// .p-2
+// .p-3
+// .font-1
+// .font-2
+//----------------------------------------------------------------------
+// VARIABLES
+// DEFAULT VALUES
+// P
+// $font-1: "aller";
+// $font-2: "futura";
+$font-1: "Source Sans Pro", sans serif;
+$font-2: "Open Sans", sans-serif;
+$font-color-default: $color-text;
+$font-size-default: 1.1em;
+$line-height-default: 1.65;
+$font-weight-default: 300;
+
+// HEADERS
+// h1
+$font-h1: $font-1;
+$font-color-h1: $color-text;
+$font-size-h1: 2.5rem;
+$font-weight-h1: 300;
+$line-height-h1: 1.2;
+$letter-spacing-h1: -0.25rem;
+$margin-h1: 0 0 0.7rem 0;
+
+//h2
+$font-h2: $font-1;
+$font-color-h2: $color-text;
+$font-size-h2: 1.5rem;
+$font-weight-h2: 300;
+$line-height-h2: 1.5;
+$letter-spacing-h2: -0.25rem;
+$margin-h2: 0 0 0.7rem 0;
+
+//h3
+$font-h3: $font-1;
+$font-color-h3: $color-text;
+$font-size-h3: 1.25rem;
+$font-weight-h3: 300;
+$line-height-h3: 1.5;
+$letter-spacing-h3: -0.25rem;
+$margin-h3: 0 0 0.7rem 0;
+
+//h4
+$font-h4: $font-1;
+$font-color-h4: $color-text;
+$font-size-h4: 1.1rem;
+$font-weight-h4: 300;
+$line-height-h4: 1.2;
+$letter-spacing-h4: -0.25rem;
+$margin-h4: 0 0 0.7rem 0;
+
+//h5
+$font-h4: $font-1;
+$font-color-h4: $color-text;
+$font-size-h4: 1rem;
+$font-weight-h4: 300;
+$line-height-h4: 1.2;
+$letter-spacing-h4: -0.25rem;
+$margin-h4: 0 0 0.7rem 0;
+
+//h6
+$font-h4: $font-1;
+$font-color-h4: $color-text;
+$font-size-h4: 0.9rem;
+$font-weight-h4: 300;
+$line-height-h4: 1.2;
+$letter-spacing-h4: -0.25rem;
+$margin-h4: 0 0 0.7rem 0;
+
+//CODE
+$code-color: $color-neutral-2;
+$code-background: $color-neutral-1;
+$code-padding: 0.3em;
+$code-border: $color-neutral-2 1px solid;
+$code-border-radius: $border-radius-default;
+
+// MARK
+// L'élément HTML <mark> représente un texte marqué ou surligné à cause de sa pertinence dans le contexte.
+// Il peut par exemple être utilisé afin d'indiquer les correspondances d'un mot-clé recherché au sein d'un document.
+$mark-weight: 800;
+$mark-color: $color-text;
+$mark-background: pink;
+
+// STRONG
+// L'élément HTML <strong> indique que le texte a une importance particulière ou un certain sérieux voire un caractère urgent.
+// Cela se traduit généralement par un affichage en gras.
+$strong-weight: 600;
+$strong-color: $color-text;
+
+// ITALIC
+$italic-style: italic;
+
+// UNDERLINED
+$underlined-style: solid 1px;
+
+//LINKS
+$link-color: $color-text;
+$link-color-hover: lighten($link-color, 35%);
+$link-decoration: none;
+$link-hover-decoration: none;
+$link-background: none;
+
+// TITRES - SOUS-TITRES - PARAGRAPHES
+$title-1-font: $font-1;
+$title-1-color: $color-text;
+$title-1-font-size: 1.8rem;
+$title-1-font-weight: $font-weight-default;
+$title-1-line-height: $line-height-default;
+$title-1-letter-spacing: 0rem; //-0.25rem;
+$title-1-margin: 0 0 0.7rem 0;
+$title-1-style: normal;
+$title-1-text-decoration: none;
+
+$title-2-font: $font-1;
+$title-2-color: $color-text;
+$title-2-font-size: 1.25rem;
+$title-2-font-weight: $font-weight-default;
+$title-2-line-height: $line-height-default;
+$title-2-letter-spacing: 0rem;
+$title-2-margin: 0 0 0.7rem 0;
+$title-2-style: normal;
+$title-2-text-decoration: none;
+
+$title-3-font: $font-1;
+$title-3-color: $color-text;
+$title-3-font-size: 1.19rem;
+$title-3-font-weight: $font-weight-default;
+$title-3-line-height: $line-height-default;
+$title-3-letter-spacing: 0rem;
+$title-3-margin: 0 0 0.7rem 0;
+$title-3-style: normal;
+$title-3-text-decoration: none;
+
+$sub-title-1-font: $font-2;
+$sub-title-1-color: $color-text;
+$sub-title-1-font-size: 1.4rem;
+$sub-title-1-font-weight: $font-weight-default;
+$sub-title-1-line-height: $line-height-default;
+$sub-title-1-letter-spacing: 0rem;
+$sub-title-1-margin: 0 0 0.7rem 0;
+$sub-title-1-style: italic;
+$sub-title-1-text-decoration: none;
+
+$sub-title-2-font: $font-2;
+$sub-title-2-color: $color-text;
+$sub-title-2-font-size: 1.15rem;
+$sub-title-2-font-weight: $font-weight-default;
+$sub-title-2-line-height: $line-height-default;
+$sub-title-2-letter-spacing: 0rem;
+$sub-title-2-margin: 0 0 0.7rem 0;
+$sub-title-2-style: italic;
+$sub-title-2-text-decoration: none;
+
+$sub-title-3-font: $font-2;
+$sub-title-3-color: $color-text;
+$sub-title-3-font-size: 1rem;
+$sub-title-3-font-weight: $font-weight-default;
+$sub-title-3-line-height: $line-height-default;
+$sub-title-3-letter-spacing: 0rem;
+$sub-title-3-margin: 0 0 0.7rem 0;
+$sub-title-3-style: italic;
+$sub-title-3-text-decoration: none;
+
+$p-1-font: $font-2;
+$p-1-color: $color-text;
+$p-1-font-size: 1.2rem;
+$p-1-font-weight: $font-weight-default;
+$p-1-line-height: $line-height-default;
+$p-1-letter-spacing: 0rem;
+$p-1-margin: 0 0 0.7rem 0;
+$p-1-style: normal;
+
+$p-2-font: $font-2;
+$p-2-color: $color-text;
+$p-2-font-size: 1rem;
+$p-2-font-weight: $font-weight-default;
+$p-2-line-height: $line-height-default;
+$p-2-letter-spacing: 0rem;
+$p-2-margin: 0 0 0.7rem 0;
+$p-2-style: normal;
+
+$p-3-font: $font-2;
+$p-3-color: $color-text;
+$p-3-font-size: 0.9rem;
+$p-3-font-weight: $font-weight-default;
+$p-3-line-height: $line-height-default;
+$p-3-letter-spacing: 0rem;
+$p-3-margin: 0 0 0.7rem 0;
+$p-3-style: normal;
+
+// BLOQUEQUOTE
+//L'élément <blockquote> (qui signifie bloc de citation) indique que le texte contenu dans l'élément est une citation longue.
+//Le texte est généralement affiché avec une indentation (voir les notes ci-après).
+//Une URL indiquant la source de la citation peut être donnée grâce à l'attribut cite
+//tandis qu'un texte représentant la source peut être donné via l'élément <cite>.
+$q-color: $color-text;
+$q-font: $font-2;
+$q-font-style: italic;
+$q-border-left: solid 2px;
+$q-margin-left: 2rem;
+$q-padding-left: 1rem;
+
+//-------------------------------------------------------------------------------------------------------------
+// MODULE DEFAULT SPECIFICATIONS
+//-------------------------------------------------------------------------------------------------------------
+body {
+	font-family: $font-1;
+	font-size: $font-size-default;
+	color: $font-color-default;
+	line-height: $line-height-default;
+	font-weight: $font-weight-default;
+}
+// A MODIFIER ERREUR
+// DEFAULT HEADERS
+// @for $i from 1 through 4 {
+//    h#{$i},.h#{$i}{
+//       font-family: $font-h#{$i};
+// 	   font-size: $font-size-h#{$i};
+//       font-weight: $font-weight-h#{$i};
+//       color: $font-color-h#{$i};
+//       line-height: $line-height-h#{$i};
+//       margin :$margin-h#{$i};
+//       letter-spacing: $letter-spacing-h#{$i};
+//    }
+// }
+
+// HEADERS
+h1,
+.h1 {
+	font-family: $font-h1;
+	font-size: $font-size-h1;
+	font-weight: $font-weight-h1;
+	color: $font-color-h1;
+	line-height: $line-height-h1;
+	margin: $margin-h1;
+	letter-spacing: $letter-spacing-h1;
+}
+
+// CODE -------------------
+code,
+.code {
+	color: $code-color;
+	background: $code-background;
+	padding: $code-padding;
+	border: $code-border;
+	border-radius: $code-border-radius;
+}
+// MARK
+mark,
+.mark {
+	font-weight: $mark-weight;
+	color: $mark-color;
+	background-color: $mark-background;
+}
+// STRONG ------------------
+strong,
+.bold {
+	font-weight: bold;
+	color: $strong-color;
+}
+// ITALIC ------------------
+.italic {
+	font-style: $italic-style;
+}
+// UNDERLINED ---------------
+.underlined {
+	border-bottom: $underlined-style;
+}
+// LINKS ------------------
+a,
+.link {
+	color: $link-color;
+	text-decoration: $link-decoration;
+	&:hover {
+		color: $link-color-hover;
+		text-decoration: $link-hover-decoration;
+	}
+}
+// TITRES - SOUS-TITRES - PARAGRAPHES
+.title-1 {
+	font-family: $title-1-font;
+	color: $title-1-color;
+	font-size: $title-1-font-size;
+	font-weight: $title-1-font-weight;
+	line-height: $title-1-line-height;
+	letter-spacing: $title-1-letter-spacing;
+	margin: $title-1-margin;
+	font-style: $title-1-style;
+	text-decoration: $title-1-text-decoration;
+}
+.title-2 {
+	font-family: $title-2-font;
+	color: $title-2-color;
+	font-size: $title-2-font-size;
+	font-weight: $title-2-font-weight;
+	line-height: $title-2-line-height;
+	letter-spacing: $title-2-letter-spacing;
+	margin: $title-2-margin;
+	font-style: $title-2-style;
+	text-decoration: $title-2-text-decoration;
+}
+.title-3 {
+	font-family: $title-3-font;
+	color: $title-3-color;
+	font-size: $title-3-font-size;
+	font-weight: $title-3-font-weight;
+	line-height: $title-3-line-height;
+	letter-spacing: $title-3-letter-spacing;
+	margin: $title-3-margin;
+	font-style: $title-3-style;
+	text-decoration: $title-3-text-decoration;
+}
+.sub-title-1 {
+	font-family: $sub-title-1-font;
+	color: $sub-title-1-color;
+	font-size: $sub-title-1-font-size;
+	font-weight: $sub-title-1-font-weight;
+	line-height: $sub-title-1-line-height;
+	letter-spacing: $sub-title-1-letter-spacing;
+	margin: 0 0 0.7rem 0;
+	font-style: $sub-title-1-style;
+	text-decoration: $sub-title-1-text-decoration;
+}
+.sub-title-2 {
+	font-family: $sub-title-2-font;
+	color: $sub-title-2-color;
+	font-size: $sub-title-2-font-size;
+	font-weight: $sub-title-2-font-weight;
+	line-height: $sub-title-2-line-height;
+	letter-spacing: $sub-title-2-letter-spacing;
+	margin: 0 0 0.7rem 0;
+	font-style: $sub-title-2-style;
+	text-decoration: $sub-title-2-text-decoration;
+}
+.sub-title-3 {
+	font-family: $sub-title-3-font;
+	color: $sub-title-3-color;
+	font-size: $sub-title-3-font-size;
+	font-weight: $sub-title-3-font-weight;
+	line-height: $sub-title-3-line-height;
+	letter-spacing: $sub-title-3-letter-spacing;
+	margin: 0 0 0.7rem 0;
+	font-style: $sub-title-2-style;
+	text-decoration: $sub-title-3-text-decoration;
+}
+.p-1 {
+	font-family: $p-1-font;
+	color: $p-1-color;
+	font-size: $p-1-font-size;
+	font-weight: $p-1-font-weight;
+	line-height: $p-1-line-height;
+	letter-spacing: $p-1-letter-spacing;
+	margin: $p-1-margin;
+	font-style: $p-1-style;
+}
+.p-2 {
+	font-family: $p-2-font;
+	color: $p-2-color;
+	font-size: $p-2-font-size;
+	font-weight: $p-2-font-weight;
+	line-height: $p-2-line-height;
+	letter-spacing: $p-2-letter-spacing;
+	margin: $p-2-margin;
+	font-style: $p-2-style;
+}
+.p-3 {
+	font-family: $p-3-font;
+	color: $p-3-color;
+	font-size: $p-3-font-size;
+	font-weight: $p-3-font-weight;
+	line-height: $p-3-line-height;
+	letter-spacing: $p-3-letter-spacing;
+	margin: $p-3-margin;
+	font-style: $p-3-style;
+}
+// BLOQUEQUOTE
+blockquote,
+q {
+	color: $q-color;
+	font-family: $q-font;
+	font-style: $q-font-style;
+	border-left: $q-border-left;
+	margin-left: $q-margin-left;
+	padding-left: $q-padding-left;
+}
+
+// HELPERS TYPO
+
+.font-1 {
+	font-family: $font-1;
+}
+.font-2 {
+	font-family: $font-2;
+}

@@ -4,21 +4,101 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Intensiv' - Elements</title>
 		<link rel="stylesheet" href="./app.scss" />
-		<title>Intensiv'</title>
 	</head>
-	<body>
-      <h1>Intensiv'</h1>
-      <nav>
-          <ul>
-              <li><a href="./index.html">Index</a></li>
-              <li><a href="./elements.html">Elements</a></li>
-              <li><a href="./posts.html">Posts</a></li>
-          </ul>
-      </nav>
- 
-
-      <script src="./app.js"></script>
-  </body>
+	<body class="container">
+		<h1 class="txt-center">ELEMENTS <span class="display-block">REFERENCE</span></h1>
+		<!-- SECTION COULEURS -->
+		<section>
+			<h2>COLORS</h2>
+			<div class="grid">
+				<div
+					class="background-color-1 text-color-neutral-1 text-center xs-col-4 l-col-1"
+					style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+				>
+					[color-1]
+				</div>
+				<div
+					class="background-color-2 text-color-neutral-1 text-center xs-col-4 l-col-1"
+					style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+				>
+					[color-2]
+				</div>
+				<div
+					class="background-color-3 text-color-neutral-1 text-center xs-col-4 l-col-1"
+					style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+				>
+					[color-3]
+				</div>
+				<div
+					class="background-color-text text-color-neutral-1 text-center xs-col-4 l-col-1"
+					style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+				>
+					[color-text]
+				</div>
+				<div
+					class="background-color-neutral-1 text-color-neutral-2 text-center xs-col-4 l-col-1"
+					style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+				>
+					[color-neutral-1]
+				</div>
+				<div
+					class="background-color-neutral-2 text-color-neutral-1 text-center xs-col-4 l-col-1"
+					style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+				>
+					[color-neutral-2]
+				</div>
+			</div>
+		</section>
+		<div class="lineSeparator"></div>
+		<!-- SECTION POLICE TEXTE -->
+		<section>
+			<h2 class="h2 font-1">
+				TITRE POLICE 1 [font-1]
+				<span id="police-font-1">-"MERRIWEATHER", GEORGIA, SERIF | #212931 </span>
+			</h2>
+			<p class="font-1">TEXTE POLICE 1 [font-1] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
+			<h2 class="h2 font-2">
+				TITRE POLICE 2 [font-2]
+				<span id="police-font-2">-"MERRIWEATHER", GEORGIA, SERIF | #212931</span>
+			</h2>
+			<p class="font-2">TEXTE POLICE 2 [font-2] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
+			<p>
+				This is <mark class="mark">mark</mark> and this is <strong class="strong">strong</strong>. This is <span class="italic">[italic]</span> This is
+				<sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <span class="underlined">[underlined]</span> and this is code:
+				<code> for (;;) { ... }></code>. Finally, this is a <a href="#">link</a>.
+			</p>
+		</section>
+		<div class="lineSeparator"></div>
+		<!-- SECTION HEADERS -->
+		<section>
+			<h2 class="h3">HEADERS <span id="police-headers">-"SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931</span></h2>
+			<h2 class="h1">HEADING LEVEL 1 [h1]</h2>
+			<h3 class="h2">HEADING LEVEL 2 [h2]</h3>
+			<h4 class="h3">HEADING LEVEL 3 [h3]</h4>
+			<h5 class="h4">HEADING LEVEL 4 [h4]</h5>
+			<h6 class="h5">HEADING LEVEL 5 [h5]</h6>
+			<h6 class="h6">HEADING LEVEL 6 [h6]</h6>
+		</section>
+		<div class="lineSeparator"></div>
+		<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 1-->
+		<section>
+			<h2 class="title-1">Titre de Niveau 1 [title-1] / HEADING WITH A SUBTITLE</h2>
+			<h3 class="sub-title-1">Sous titre de Niveau 1 [sub-title-1] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+			<p class="p-1">
+				Texte de Niveau 1 [p-1] /Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut
+				ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.
+			</p>
+		</section>
+		<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 2-->
+		<section>
+			<h2 class="title-2">Titre de Niveau 2 [title-2] / HEADING WITH A SUBTITLE</h2>
+			<h3 class="sub-title-2">Sous titre de Niveau 2 [sub-title-2] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+			<p class="p-2">
+				Texte de Niveau 2 [p-2] / Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut
+				ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus accumsan.
+			</p>
+		</section>
 	</body>
 </html>
