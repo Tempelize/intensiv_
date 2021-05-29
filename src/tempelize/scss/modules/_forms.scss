@@ -4,9 +4,12 @@
 // .input-radio => pour boutons radio
 //-----------------------------------------------------
 // VARIABLES
+$label-margin: 0.2rem 0 0 0.5rem;
+
 $input-height: 50px;
 $input-padding: 0;
 $input-width: 100%;
+$input-margin: 0.5rem 0 0.5rem 0;
 
 $input-radio-margin-left: 150px;
 
@@ -18,10 +21,14 @@ $input-select-padding-left: 10px;
 form {
 	input {
 	}
-	:not([type="radio"], [type="checkbox"], [type="submit"], [type="reset"]) {
+	:not([type="radio"], [type="checkbox"], [type="submit"], [type="reset"], label, div) {
 		height: $input-height;
 		padding: $input-padding;
 		width: $input-width;
+		margin: $input-margin;
+	}
+	label {
+		margin: $label-margin;
 	}
 
 	.input-radio {

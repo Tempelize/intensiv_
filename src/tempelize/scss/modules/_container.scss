@@ -6,12 +6,28 @@
 // .m
 // .l
 // .xl
+// .box =>  avec bordure et padding
+// .box-stretch-width-0 à 100 (%) => étendue en % de la largeur de la boite dans son container
+// .box-stretch-height-0 à 100 (%) => étendue en % de la hauteur de la boite dans son container (la hauteur de son container doit être fixée)
+// .box-width-1 à 500px => largeur d'une boite en pixel (rajouté .box pour avoir bordure et padding)
+// .box-height-1 à 500px => hauteur de la boite en pixel (rajouté .box pour avoir bordure et padding)
+// .flex => display: flex et justify content : center par défaut
+// .flex-start => justify-content : start;
+// .flex-between => justify-content : space-between;
+// .flex-wrap => flex-wrap: wrap;
+// .pre => <pre>
 //-------------------------------------------------------------------------------
 // VARIABLES
 $box-width-default: 100%;
 $box-border: solid 1px;
 $box-border-color: $color-neutral-2;
 $box-padding: 1rem;
+
+$pre-border-background: $color-neutral-1;
+$pre-border-color: $color-text;
+$pre-border: 1px solid;
+
+$flex-margin-default: 0.2rem;
 //-------------------------------------------------------------------------------
 // MODULE SPECIFICATIONS
 @use "sass:map";
@@ -71,12 +87,45 @@ $box-padding: 1rem;
 	border-color: $box-border-color;
 	padding: $box-padding;
 }
+
 $pourcent: "%";
 @for $var from 0 through 100 {
-	.box-width-#{$var} {
+	.box-stretch-width-#{$var} {
 		width: #{$var}#{$pourcent};
 	}
-	.box-height-#{$var} {
+	.box-stretch-height-#{$var} {
 		height: #{$var}#{$pourcent};
 	}
+}
+@for $var from 1 through 500 {
+	.box-width-#{$var} {
+		width: #{$var}px;
+	}
+	.box-height-#{$var} {
+		height: #{$var}px;
+	}
+}
+
+.flex {
+	display: flex;
+	justify-content: flex-start;
+	&.flex-start {
+		justify-content: flex-start;
+	}
+	&.flex-between {
+		justify-content: space-between;
+	}
+	&.flex-wrap {
+		flex-wrap: wrap;
+	}
+	div {
+		margin: $flex-margin-default;
+	}
+}
+
+pre,
+.pre {
+	background-color: $pre-border-background;
+	border: $pre-border;
+	border-color: $pre-border-color;
 }

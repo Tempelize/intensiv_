@@ -15,6 +15,7 @@ $ol-li-list-style: lower-alpha;
 $li-color-alternate: $color-2;
 $li-color-alternate-hover: lighten($li-color-alternate, 20%);
 
+$menu-horizontal-margin-right: 1rem;
 //--------------------------------------
 // MODULE SPECIFICATIONS
 ul {
@@ -75,6 +76,6 @@ ol {
 		}
 	}
 	li:not(:last-of-type) {
-		margin-right: 2rem;
+		margin-right: $menu-horizontal-margin-right;
 	}
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,70 +8,65 @@
 		<link rel="stylesheet" href="./app.scss" />
 	</head>
 	<body>
-		<!-- <div class="parent">
-			<div class="child1"></div>
-			<div class="child2"></div>
+		<!-- <div class="grandparent">
+			<div class="parent">
+				<div class="enfant"></div>
+			</div>
 		</div> -->
 
-		<div class="container-1">
-			<div class="container-2">
-				<div class="container-3 container">
-					<h1 class="txt-center">ELEMENTS <span class="display-block">REFERENCE</span></h1>
+		<div class="container-principal container">
+			<div class="container-secondaire">
+				<div class="container-contenu-1">
+					<h2 class="text-center">ELEMENTS <span class="display-block">REFERENCE</span></h2>
 					<!-- SECTION COULEURS -->
 					<section>
-						<h2>COLORS</h2>
-						<div class="grid">
-							<div
-								class="background-color-1 text-color-neutral-1 text-center xs-col-4 l-col-1"
-								style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
-							>
-								[color-1]
+						<h3>COLORS</h3>
+						<div class="flex flex-wrap">
+							<div class="background-color-1 text-color-neutral-1 text-center box-width-150 box-height-150" style="line-height: 150px; vertical-align: middle">
+								[.color-1]
+							</div>
+							<div class="background-color-2 text-color-neutral-1 text-center box-width-150 box-height-150" style="line-height: 150px; vertical-align: middle">
+								[.color-2]
 							</div>
 							<div
-								class="background-color-2 text-color-neutral-1 text-center xs-col-4 l-col-1"
+								class="background-color-3 text-color-neutral-1 text-center box-width-150 box-height-150"
 								style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
 							>
-								[color-2]
+								[.color-3]
 							</div>
 							<div
-								class="background-color-3 text-color-neutral-1 text-center xs-col-4 l-col-1"
-								style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+								class="background-color-text text-color-neutral-1 text-center box-width-150 box-height-150"
+								style="line-height: 150px; vertical-align: middle"
 							>
-								[color-3]
+								[.color-text]
 							</div>
 							<div
-								class="background-color-text text-color-neutral-1 text-center xs-col-4 l-col-1"
-								style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+								class="background-color-neutral-1 text-color-neutral-2 text-center box-width-150 box-height-150"
+								style="line-height: 150px; vertical-align: middle"
 							>
-								[color-text]
+								[.color-neutral-1]
 							</div>
 							<div
-								class="background-color-neutral-1 text-color-neutral-2 text-center xs-col-4 l-col-1"
-								style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+								class="background-color-neutral-2 text-color-neutral-1 text-center box-width-150 box-height-150"
+								style="line-height: 150px; vertical-align: middle"
 							>
-								[color-neutral-1]
-							</div>
-							<div
-								class="background-color-neutral-2 text-color-neutral-1 text-center xs-col-4 l-col-1"
-								style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
-							>
-								[color-neutral-2]
+								[.color-neutral-2]
 							</div>
 						</div>
 					</section>
 					<div class="line-separator"></div>
 					<!-- SECTION POLICE TEXTE -->
 					<section>
-						<h2 class="h2 font-1">
-							TITRE POLICE 1 [font-1]
+						<h3 class="h2 font-1">
+							TITRE POLICE 1 [.font-1]
 							<span id="police-font-1">-"MERRIWEATHER", GEORGIA, SERIF | #212931 </span>
-						</h2>
+						</h3>
 						<p class="font-1">TEXTE POLICE 1 [font-1] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
-						<h2 class="h2 font-2">
-							TITRE POLICE 2 [font-2]
+						<h3 class="h2 font-2">
+							TITRE POLICE 2 [.font-2]
 							<span id="police-font-2">-"MERRIWEATHER", GEORGIA, SERIF | #212931</span>
-						</h2>
-						<p class="font-2">TEXTE POLICE 2 [font-2] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
+						</h3>
+						<p class="font-2">TEXTE POLICE 2 [.font-2] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
 						<p>
 							This is <mark class="mark">mark</mark> and this is <strong class="strong">strong</strong>. This is <span class="italic">[italic]</span> This is
 							<sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <span class="underlined">[underlined]</span> and this is code:
@@ -81,42 +76,42 @@
 					<div class="line-separator"></div>
 					<!-- SECTION HEADERS -->
 					<section>
-						<h2 class="h3">HEADERS <span id="police-headers">-"SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931</span></h2>
-						<h2 class="h1">HEADING LEVEL 1 [h1]</h2>
-						<h3 class="h2">HEADING LEVEL 2 [h2]</h3>
-						<h4 class="h3">HEADING LEVEL 3 [h3]</h4>
-						<h5 class="h4">HEADING LEVEL 4 [h4]</h5>
-						<h6 class="h5">HEADING LEVEL 5 [h5]</h6>
-						<h6 class="h6">HEADING LEVEL 6 [h6]</h6>
+						<h3 class="h3">HEADERS <span id="police-headers">-"SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931</span></h3>
+						<h4 class="h1">HEADING LEVEL 1 [.h1]</h4>
+						<h4 class="h2">HEADING LEVEL 2 [.h2]</h4>
+						<h4 class="h3">HEADING LEVEL 3 [.h3]</h4>
+						<h4 class="h4">HEADING LEVEL 4 [.h4]</h4>
+						<h4 class="h5">HEADING LEVEL 5 [.h5]</h4>
+						<h4 class="h6">HEADING LEVEL 6 [.h6]</h4>
 					</section>
 					<div class="line-separator"></div>
 					<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 1-->
 					<section>
-						<h2 class="title-1">Titre de Niveau 1 [title-1] / HEADING WITH A SUBTITLE</h2>
-						<h3 class="sub-title-1">Sous titre de Niveau 1 [sub-title-1] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<h3 class="title-1">Titre de Niveau 1 [.title-1] / HEADING WITH A SUBTITLE</h3>
+						<h4 class="sub-title-1">Sous titre de Niveau 1 [.sub-title-1] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
 						<p class="p-1">
-							Texte de Niveau 1 [p-1] /Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi
+							Texte de Niveau 1 [.p-1] /Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi
 							ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
 							accumsan.
 						</p>
 					</section>
 					<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 2-->
 					<section>
-						<h2 class="title-2">Titre de Niveau 2 [title-2] / HEADING WITH A SUBTITLE</h2>
-						<h3 class="sub-title-2">Sous titre de Niveau 2 [sub-title-2] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<h3 class="title-2">Titre de Niveau 2 [.title-2] / HEADING WITH A SUBTITLE</h3>
+						<h4 class="sub-title-2">Sous titre de Niveau 2 [.sub-title-2] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
 						<p class="p-2">
-							Texte de Niveau 2 [p-2] / Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi
-							ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
+							Texte de Niveau 2 [.p-2] / Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare
+							mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
 							accumsan.
 						</p>
 					</section>
 					<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 3-->
 					<section>
-						<h2 class="title-3">Titre de Niveau 3 [title-3] / HEADING WITH A SUBTITLE</h2>
-						<h3 class="sub-title-3">Sous titre de Niveau 3 [sub-title-2] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h3>
+						<h3 class="title-3">Titre de Niveau 3 [.title-3] / HEADING WITH A SUBTITLE</h3>
+						<h4 class="sub-title-3">Sous titre de Niveau 3 [.sub-title-2] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
 						<p class="p-3">
-							Texte de Niveau 3 [p-3] / Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi
-							ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
+							Texte de Niveau 3 [.p-3] / Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare
+							mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
 							accumsan.
 						</p>
 					</section>
@@ -461,7 +456,7 @@ Enter your message
 					<!-- BOX  -->
 					<section>
 						<h3 class="h3">BOX</h3>
-						<div class="box box-width-100 box-height-100">
+						<div class="box box-stretch-width-100 box-stretch-height-100">
 							<p>
 								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus magni animi necessitatibus sed dolore odio illum temporibus ratione? Possimus
 								velit unde reprehenderit fuga sint repudiandae ea expedita culpa voluptatibus quisquam! Dolor sapiente dolore consequatur a, esse porro? Officia
@@ -480,21 +475,81 @@ Enter your message
 					<section>
 						<h3 class="h3">PREFORMATTED</h3>
 						<pre>
-						i=0;
-						while(!deck.isInOrder()){
-							print 'Iteration' + i;
-							deck.shuffle();
-							i++;
-						}
-						print 'It took' + i + 'iteration to sort the deck';
-					</pre
+	i=0; 
+	while(!deck.isInOrder()){ 
+		print 'Iteration' + i; 
+		deck.shuffle(); 
+		i++; 
+	} 
+	print 'It took' + i + 'iteration to sort the deck';
+						</pre
 						>
 					</section>
-
-					<div class="line-separator"></div>
-					<!-- CONTACT  -->
-					<section></section>
 				</div>
+				<!-- FOOTER PRINCIPAL ET REUTILISABLE -->
+				<footer>
+					<div class="container-contenu-2 grid">
+						<div class="xl-col-6">
+							<form action="./formulaire.html" method="GET">
+								<div>
+									<label class="display-block" for="nom-2">NAME</label>
+									<input id="nom-2" type="text" name="name" />
+								</div>
+								<div>
+									<label class="display-block" for="email-2">EMAIL</label>
+									<input type="email" name="email" id="email-2" />
+								</div>
+								<div>
+									<label for="message-2">MESSAGE</label>
+									<textarea name="message" id="message-2" cols="30" rows="40"> </textarea>
+								</div>
+								<div>
+									<input type="submit" />
+									<input type="reset" />
+								</div>
+							</form>
+						</div>
+						<!-- ADDRESSE FOOTER -->
+						<div class="xl-col-6">
+							<address>
+								<div class="box box-height-100" style="border-right: 0; border-bottom: 0; border-top: 0">
+									<p class="title-2 display-inline-block" style="margin-left: 25px">ADDRESS</p>
+									<p class="title-3 display-inline-block" style="margin-left: 50px">9 rue Charles Deliège 4247</p>
+									<p class="title-3 display-inline-block" style="margin-left: 170px">Fléron, TN 00000-0000</p>
+								</div>
+								<div class="box box-height-100" style="border-right: 0; border-bottom: 0">
+									<p class="title-2 display-inline-block" style="margin-left: 25px">PHONE</p>
+									<a class="title-3" href="tel:+320000000" style="margin-left: 70px">+32000000000</a>
+								</div>
+
+								<div class="box box-height-100" style="border-right: 0; border-bottom: 0">
+									<p class="title-2 display-inline-block" style="margin-left: 25px">EMAIL</p>
+									<a href="mailto:info@untilted.tld" style="margin-left: 70px">mailto:info@untilted.tld</a>
+								</div>
+								<div class="box box-height-100" style="border-right: 0; border-bottom: 0">
+									<p class="title-2 display-inline-block" style="margin-left: 25px">SOCIAL</p>
+									<ul class="menu-horizontal display-inline-block" style="margin-left: 70px">
+										<li>
+											<a href="#"><i class="fab fa-twitter cercle"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fab fa-facebook-f cercle"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fab fa-instagram cercle"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fab fa-github cercle"></i></a>
+										</li>
+										<li>
+											<a href="#"><i class="fas fa-basketball-ball cercle"></i></a>
+										</li>
+									</ul>
+								</div>
+							</address>
+						</div>
+					</div>
+				</footer>
 			</div>
 		</div>
 		<script src="./app.js"></script>

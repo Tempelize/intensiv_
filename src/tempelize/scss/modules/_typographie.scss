@@ -257,17 +257,19 @@ body {
 	font-weight: $font-weight-default;
 }
 // A MODIFIER ERREUR
+
 // DEFAULT HEADERS
-// @for $i from 1 through 4 {
-//    h#{$i},.h#{$i}{
-//       font-family: $font-h#{$i};
-// 	   font-size: $font-size-h#{$i};
-//       font-weight: $font-weight-h#{$i};
-//       color: $font-color-h#{$i};
-//       line-height: $line-height-h#{$i};
-//       margin :$margin-h#{$i};
-//       letter-spacing: $letter-spacing-h#{$i};
-//    }
+// @for $i from 1 through 6 {
+// 	h#{$i},
+// 	.h#{$i} {
+// 		font-family: $font-h#{$i};
+// 		font-size: $font-size-h#{$i};
+// 		font-weight: $font-weight-h#{$i};
+// 		color: $font-color-h#{$i};
+// 		line-height: $line-height-h#{$i};
+// 		margin: $margin-h#{$i};
+// 		letter-spacing: $letter-spacing-h#{$i};
+// 	}
 // }
 
 // HEADERS
@@ -281,6 +283,7 @@ h1,
 	margin: $margin-h1;
 	letter-spacing: $letter-spacing-h1;
 }
+// RAJOUTER LE RESTE
 
 // CODE -------------------
 code,
