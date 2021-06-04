@@ -6,9 +6,11 @@
 // .m
 // .l
 // .xl
-// .box =>  avec bordure et padding
+// .box-border-0 à 10 =>  box dans son container avec bordure de 0px à 10px et padding
+
 // .box-stretch-width-0 à 100 (%) => étendue en % de la largeur de la boite dans son container
 // .box-stretch-height-0 à 100 (%) => étendue en % de la hauteur de la boite dans son container (la hauteur de son container doit être fixée)
+
 // .box-width-1 à 500px => largeur d'une boite en pixel (rajouté .box pour avoir bordure et padding)
 // .box-height-1 à 500px => hauteur de la boite en pixel (rajouté .box pour avoir bordure et padding)
 // .flex => display: flex et justify content : center par défaut
@@ -19,8 +21,9 @@
 //-------------------------------------------------------------------------------
 // VARIABLES
 $box-width-default: 100%;
-$box-border: solid 1px;
 $box-border-color: $color-neutral-2;
+$box-border-type: solid;
+$box-border-radius: 0px; //$border-radius-default;
 $box-padding: 1rem;
 
 $pre-border-background: $color-neutral-1;
@@ -81,22 +84,45 @@ $flex-margin-default: 0.2rem;
 // 		"container-size": 1140px,
 // 	),
 // );
-.box {
-	width: $box-width-default;
-	border: $box-border;
-	border-color: $box-border-color;
-	padding: $box-padding;
+
+@for $var from 0 through 10 {
+	.box-border-#{$var} {
+		width: $box-width-default;
+		border: $box-border-type #{$var}px;
+		border-color: $box-border-color;
+		border-radius: $box-border-radius;
+		padding: $box-padding;
+	}
+}
+.border-color-1 {
+	border-color: $color-1;
+}
+.border-color-2 {
+	border-color: $color-2;
+}
+.border-color-3 {
+	border-color: $color-3;
+}
+.border-color-text {
+	border-color: $color-text;
+}
+.border-color-neutral-1 {
+	border-color: $color-neutral-1;
+}
+.border-color-neutral-2 {
+	border-color: $color-neutral-2;
 }
 
-$pourcent: "%";
-@for $var from 0 through 100 {
-	.box-stretch-width-#{$var} {
-		width: #{$var}#{$pourcent};
-	}
-	.box-stretch-height-#{$var} {
-		height: #{$var}#{$pourcent};
-	}
-}
+// A SUPPRIMER
+// $pourcent: "%";
+// @for $var from 0 through 100 {
+// 	.box-stretch-width-#{$var} {
+// 		width: #{$var}#{$pourcent};
+// 	}
+// 	.box-stretch-height-#{$var} {
+// 		height: #{$var}#{$pourcent};
+// 	}
+// }
 @for $var from 1 through 500 {
 	.box-width-#{$var} {
 		width: #{$var}px;

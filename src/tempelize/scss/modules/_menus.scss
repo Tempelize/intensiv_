@@ -7,9 +7,11 @@
 //------------------------------------
 // VARIABLES
 $ul-padding-left: 0;
+$ul-margin: 1rem;
 $ul-li-list-style: square;
 
 $ol-padding-left: 0;
+$ol-margin: 1rem;
 $ol-li-list-style: lower-alpha;
 
 $li-color-alternate: $color-2;
@@ -20,6 +22,7 @@ $menu-horizontal-margin-right: 1rem;
 // MODULE SPECIFICATIONS
 ul {
 	padding-left: $ul-padding-left;
+	margin: $ul-margin;
 
 	li {
 		list-style: $ul-li-list-style;
@@ -42,6 +45,7 @@ ul {
 
 ol {
 	padding-left: $ol-padding-left;
+	margin: $ol-margin;
 	li {
 		list-style: $ol-li-list-style;
 	}

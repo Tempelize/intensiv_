@@ -1,272 +1,260 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Intensiv' - Elements</title>
 		<link rel="stylesheet" href="./app.scss" />
+		<title>Intensiv'</title>
 	</head>
 	<body>
-		<!-- <div class="grandparent">
-			<div class="parent">
-				<div class="enfant"></div>
-			</div>
-		</div> -->
+		<h1>Intensiv'</h1>
+		<nav>
+			<ul>
+				<li><a href="./index.html">Index</a></li>
+				<li><a href="./elements.html">Elements</a></li>
+				<li><a href="./posts.html">Posts</a></li>
+			</ul>
+		</nav>
 
-		<div class="container-principal container">
-			<div class="container-secondaire">
-				<div class="container-contenu-1">
-					<h2 class="text-center">ELEMENTS <span class="display-block">REFERENCE</span></h2>
-					<!-- SECTION COULEURS -->
-					<section>
-						<h3>COLORS</h3>
-						<div class="flex flex-wrap">
-							<div class="background-color-1 text-color-neutral-1 text-center box-width-150 box-height-150" style="line-height: 150px; vertical-align: middle">
-								[.color-1]
-							</div>
-							<div class="background-color-2 text-color-neutral-1 text-center box-width-150 box-height-150" style="line-height: 150px; vertical-align: middle">
-								[.color-2]
-							</div>
-							<div
-								class="background-color-3 text-color-neutral-1 text-center box-width-150 box-height-150"
-								style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
-							>
-								[.color-3]
-							</div>
-							<div
-								class="background-color-text text-color-neutral-1 text-center box-width-150 box-height-150"
-								style="line-height: 150px; vertical-align: middle"
-							>
-								[.color-text]
-							</div>
-							<div
-								class="background-color-neutral-1 text-color-neutral-2 text-center box-width-150 box-height-150"
-								style="line-height: 150px; vertical-align: middle"
-							>
-								[.color-neutral-1]
-							</div>
-							<div
-								class="background-color-neutral-2 text-color-neutral-1 text-center box-width-150 box-height-150"
-								style="line-height: 150px; vertical-align: middle"
-							>
-								[.color-neutral-2]
-							</div>
-						</div>
-					</section>
-					<div class="line-separator"></div>
-					<!-- SECTION POLICE TEXTE -->
-					<section>
-						<h3 class="h2 font-1">
-							TITRE POLICE 1 [.font-1]
-							<span id="police-font-1">-"MERRIWEATHER", GEORGIA, SERIF | #212931 </span>
-						</h3>
-						<p class="font-1">TEXTE POLICE 1 [font-1] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
-						<h3 class="h2 font-2">
-							TITRE POLICE 2 [.font-2]
-							<span id="police-font-2">-"MERRIWEATHER", GEORGIA, SERIF | #212931</span>
-						</h3>
-						<p class="font-2">TEXTE POLICE 2 [.font-2] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
-						<p>
-							This is <mark class="mark">mark</mark> and this is <strong class="strong">strong</strong>. This is <span class="italic">[italic]</span> This is
-							<sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <span class="underlined">[underlined]</span> and this is code:
-							<code> for (;;) { ... }></code>. Finally, this is a <a href="#">link</a>.
-						</p>
-					</section>
-					<div class="line-separator"></div>
-					<!-- SECTION HEADERS -->
-					<section>
-						<h3 class="h3">HEADERS <span id="police-headers">-"SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931</span></h3>
-						<h4 class="h1">HEADING LEVEL 1 [.h1]</h4>
-						<h4 class="h2">HEADING LEVEL 2 [.h2]</h4>
-						<h4 class="h3">HEADING LEVEL 3 [.h3]</h4>
-						<h4 class="h4">HEADING LEVEL 4 [.h4]</h4>
-						<h4 class="h5">HEADING LEVEL 5 [.h5]</h4>
-						<h4 class="h6">HEADING LEVEL 6 [.h6]</h4>
-					</section>
-					<div class="line-separator"></div>
-					<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 1-->
-					<section>
-						<h3 class="title-1">Titre de Niveau 1 [.title-1] / HEADING WITH A SUBTITLE</h3>
-						<h4 class="sub-title-1">Sous titre de Niveau 1 [.sub-title-1] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
-						<p class="p-1">
-							Texte de Niveau 1 [.p-1] /Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi
-							ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
-							accumsan.
-						</p>
-					</section>
-					<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 2-->
-					<section>
-						<h3 class="title-2">Titre de Niveau 2 [.title-2] / HEADING WITH A SUBTITLE</h3>
-						<h4 class="sub-title-2">Sous titre de Niveau 2 [.sub-title-2] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
-						<p class="p-2">
-							Texte de Niveau 2 [.p-2] / Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare
-							mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
-							accumsan.
-						</p>
-					</section>
-					<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 3-->
-					<section>
-						<h3 class="title-3">Titre de Niveau 3 [.title-3] / HEADING WITH A SUBTITLE</h3>
-						<h4 class="sub-title-3">Sous titre de Niveau 3 [.sub-title-2] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
-						<p class="p-3">
-							Texte de Niveau 3 [.p-3] / Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare
-							mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
-							accumsan.
-						</p>
-					</section>
-					<div class="line-separator"></div>
-					<!-- LISTS  -->
-					<section>
-						<div>
-							<h3 class="h3">LISTS</h3>
-							<h4>UNORDERED - UL</h4>
+		<body>
+			<div class="container-principal background-special container">
+				<h1 class="text-center"><span class="text-color-neutral-1 box-border-5 border-color-neutral-1">INTENSIV'</span></h1>
+				<div class="container-secondaire background-color-neutral-1">
+					<div class="navigation-header background-special-2">
+						<nav class="menu-horizontal display-inline-block">
 							<ul>
-								<li><a href="#">Dolor pulvinar etiam</a></li>
-								<li><a href="#">Sagittis lorem eleifnd</a></li>
-								<li><a href="#">Felis feugiot dolore viverra</a></li>
-								<li><a href="#">Dolor pulvinar etiam</a></li>
+								<li><a class="text-color-neutral-1" href="">THIS IS INTENSIV'</a></li>
+								<li><a class="text-color-neutral-1" href="">GENERIC PAGE</a></li>
+								<li><a class="text-color-neutral-1 is-actif" href="">ELEMENTS REFERENCE</a></li>
 							</ul>
-							<h4>ORDERED - OL</h4>
-							<ol>
-								<li><a href="#">Dolor pulvinar etiam</a></li>
-								<li><a href="#">Sagittis lorem eleifnd</a></li>
-								<li><a href="#">Felis feugiot dolore viverra</a></li>
-								<li><a href="#">Dolor pulvinar etiam</a></li>
-								<li><a href="#">Felis feugiot dolore viverra</a></li>
-							</ol>
-							<h4>ALTERNATE - UL.ALTERNATE</h4>
-							<ul class="alternate">
-								<li><a href="#">Dolor pulvinar etiam</a></li>
-								<li><a href="#">Sagittis lorem eleifnd</a></li>
-								<li><a href="#">Felis feugiot dolore viverra</a></li>
-								<li><a href="#">Dolor pulvinar etiam</a></li>
-							</ul>
+						</nav>
+						<ul class="menu-horizontal display-inline-block">
+							<li>
+								<a href="#"><i class="fab fa-twitter text-color-neutral-1"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-facebook-f text-color-neutral-1"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-instagram text-color-neutral-1"></i></a>
+							</li>
+							<li>
+								<a href="#"><i class="fab fa-github text-color-neutral-1"></i></a>
+							</li>
+						</ul>
+					</div>
 
-							<h4>ICONS</h4>
-							<ul class="menu-horizontal">
-								<li>
-									<a href="#"><i class="fab fa-twitter"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fab fa-facebook-f"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fab fa-instagram"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fab fa-github"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fas fa-basketball-ball"></i></a>
-								</li>
-							</ul>
-							<ul class="menu-horizontal">
-								<li>
-									<a href="#"><i class="fab fa-twitter cercle"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fab fa-facebook-f cercle"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fab fa-instagram cercle"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fab fa-github cercle"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fas fa-basketball-ball cercle"></i></a>
-								</li>
-							</ul>
-						</div>
-						<div>
-							<h4>DEFINITION COMPREND PAS LE PRINCIPE ICI DEMANDER INFOS</h4>
-							<h5>Item 1</h5>
+					<div class="container-contenu">
+						<h2 class="text-center">ELEMENTS <span class="display-block">REFERENCE</span></h2>
+						<!-- SECTION COULEURS -->
+						<section>
+							<h3>COLORS</h3>
+							<div class="flex flex-wrap">
+								<div
+									class="background-color-1 text-color-neutral-1 text-center box-width-150 box-height-150"
+									style="line-height: 150px; vertical-align: middle"
+								>
+									[.color-1]
+								</div>
+								<div
+									class="background-color-2 text-color-neutral-1 text-center box-width-150 box-height-150"
+									style="line-height: 150px; vertical-align: middle"
+								>
+									[.color-2]
+								</div>
+								<div
+									class="background-color-3 text-color-neutral-1 text-center box-width-150 box-height-150"
+									style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+								>
+									[.color-3]
+								</div>
+								<div
+									class="background-color-text text-color-neutral-1 text-center box-width-150 box-height-150"
+									style="line-height: 150px; vertical-align: middle"
+								>
+									[.color-text]
+								</div>
+								<div
+									class="background-color-neutral-1 text-color-neutral-2 text-center box-width-150 box-height-150"
+									style="line-height: 150px; vertical-align: middle"
+								>
+									[.color-neutral-1]
+								</div>
+								<div
+									class="background-color-neutral-2 text-color-neutral-1 text-center box-width-150 box-height-150"
+									style="line-height: 150px; vertical-align: middle"
+								>
+									[.color-neutral-2]
+								</div>
+							</div>
+						</section>
+						<div class="line-separator"></div>
+						<!-- SECTION POLICE TEXTE -->
+						<section>
+							<h3 class="h2 font-1">
+								TITRE POLICE 1 [.font-1]
+								<span id="police-font-1">-"MERRIWEATHER", GEORGIA, SERIF | #212931 </span>
+							</h3>
+							<p class="font-1">TEXTE POLICE 1 [font-1] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
+							<h3 class="h2 font-2">
+								TITRE POLICE 2 [.font-2]
+								<span id="police-font-2">-"MERRIWEATHER", GEORGIA, SERIF | #212931</span>
+							</h3>
+							<p class="font-2">TEXTE POLICE 2 [.font-2] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
 							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus necessitatibus at perspiciatis minima molestias earum velit! A,
-								similique numquam delectus, maxime, id dolores ad vel ex dolore cum tempore?
+								This is <mark class="mark">mark</mark> and this is <strong class="strong">strong</strong>. This is <span class="italic">[italic]</span> This is
+								<sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <span class="underlined">[underlined]</span> and this is code:
+								<code> for (;;) { ... }></code>. Finally, this is a <a href="#">link</a>.
 							</p>
-							<h5>Item 2</h5>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus necessitatibus at perspiciatis minima molestias earum velit! A,
-								similique numquam delectus, maxime, id dolores ad vel ex dolore cum tempore?
+						</section>
+						<div class="line-separator"></div>
+						<!-- SECTION HEADERS -->
+						<section>
+							<h3 class="h3">HEADERS <span id="police-headers">-"SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931</span></h3>
+							<h4 class="h1">HEADING LEVEL 1 [.h1]</h4>
+							<h4 class="h2">HEADING LEVEL 2 [.h2]</h4>
+							<h4 class="h3">HEADING LEVEL 3 [.h3]</h4>
+							<h4 class="h4">HEADING LEVEL 4 [.h4]</h4>
+							<h4 class="h5">HEADING LEVEL 5 [.h5]</h4>
+							<h4 class="h6">HEADING LEVEL 6 [.h6]</h4>
+						</section>
+						<div class="line-separator"></div>
+						<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 1-->
+						<section>
+							<h3 class="title-1">Titre de Niveau 1 [.title-1] / HEADING WITH A SUBTITLE</h3>
+							<h4 class="sub-title-1">Sous titre de Niveau 1 [.sub-title-1] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
+							<p class="p-1">
+								Texte de Niveau 1 [.p-1] /Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare
+								mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
+								accumsan.
 							</p>
-							<h5>Item 3</h5>
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus necessitatibus at perspiciatis minima molestias earum velit! A,
-								similique numquam delectus, maxime, id dolores ad vel ex dolore cum tempore?
+						</section>
+						<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 2-->
+						<section>
+							<h3 class="title-2">Titre de Niveau 2 [.title-2] / HEADING WITH A SUBTITLE</h3>
+							<h4 class="sub-title-2">Sous titre de Niveau 2 [.sub-title-2] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
+							<p class="p-2">
+								Texte de Niveau 2 [.p-2] / Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare
+								mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
+								accumsan.
 							</p>
-						</div>
-					</section>
-					<div class="line-separator"></div>
-					<!-- BLOQUECOTE -->
-					<section>
-						<h3>BLOCKQUOTE & Q</h3>
-						<blockquote cite="http://developer.mozilla.org">
-							<p>Ceci est une citation issue du Mozilla Developer Network.</p>
-						</blockquote>
-					</section>
-					<div class="line-separator"></div>
-					<!-- TABLEAUX  -->
-					<section>
-						<h3 class="h3">TABLE</h3>
-						<h4 class="h4">DEFAUT</h4>
-						<table>
-							<caption>
-								Titre du tableau classique
-							</caption>
-							<tr>
-								<th>NAME</th>
-								<th>DESCRIPTION</th>
-								<th>PRICE</th>
-							</tr>
-							<tr>
-								<td>Item1</td>
-								<td>Lorem ipsum, dolor sit amet consectetur libero</td>
-								<td>19.99</td>
-							</tr>
-							<tr>
-								<td>Item2</td>
-								<td>Lorem ipsum, dolor sit amet consectetur libero</td>
-								<td>29.99</td>
-							</tr>
-							<tr>
-								<td>Item3</td>
-								<td>Lorem ipsum, dolor sit amet consectetur libero</td>
-								<td>39.99</td>
-							</tr>
-							<tr>
-								<td>Item4</td>
-								<td>Lorem ipsum, dolor sit amet consectetur libero</td>
-								<td>49.99</td>
-							</tr>
-							<tr>
-								<td>Item4</td>
-								<td>Lorem ipsum, dolor sit amet consectetur libero</td>
-								<td>49.99</td>
-							</tr>
-							<tr>
-								<td></td>
-								<td></td>
-								<td>169.98</td>
-							</tr>
-						</table>
-						<h4 class="h4">ALTERNATE</h4>
-						<table class="alternate">
-							<caption>
-								Titre Tableau structuré
-							</caption>
-							<!-- Tableau structuré Pas obligatoire mais utilisé si tableau avec beaucoup de données -->
-							<thead>
-								<!-- En tête du tableau -->
+						</section>
+						<!-- SECTION TITRES - SOUS-TITRES - PARAGRAPHES NIVEAU 3-->
+						<section>
+							<h3 class="title-3">Titre de Niveau 3 [.title-3] / HEADING WITH A SUBTITLE</h3>
+							<h4 class="sub-title-3">Sous titre de Niveau 3 [.sub-title-2] / Lorem ipsum dolor sit amet nullam id egestas urna aliquam</h4>
+							<p class="p-3">
+								Texte de Niveau 3 [.p-3] / Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare
+								mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing blandit tempus
+								accumsan.
+							</p>
+						</section>
+						<div class="line-separator"></div>
+						<!-- LISTS  -->
+						<section>
+							<div>
+								<h3 class="h3">LISTS</h3>
+								<h4>UNORDERED - UL</h4>
+								<ul>
+									<li><a href="#">Dolor pulvinar etiam</a></li>
+									<li><a href="#">Sagittis lorem eleifnd</a></li>
+									<li><a href="#">Felis feugiot dolore viverra</a></li>
+									<li><a href="#">Dolor pulvinar etiam</a></li>
+								</ul>
+								<h4>ORDERED - OL</h4>
+								<ol>
+									<li><a href="#">Dolor pulvinar etiam</a></li>
+									<li><a href="#">Sagittis lorem eleifnd</a></li>
+									<li><a href="#">Felis feugiot dolore viverra</a></li>
+									<li><a href="#">Dolor pulvinar etiam</a></li>
+									<li><a href="#">Felis feugiot dolore viverra</a></li>
+								</ol>
+								<h4>ALTERNATE - UL.ALTERNATE</h4>
+								<ul class="alternate">
+									<li><a href="#">Dolor pulvinar etiam</a></li>
+									<li><a href="#">Sagittis lorem eleifnd</a></li>
+									<li><a href="#">Felis feugiot dolore viverra</a></li>
+									<li><a href="#">Dolor pulvinar etiam</a></li>
+								</ul>
+
+								<h4>ICONS</h4>
+								<ul class="menu-horizontal">
+									<li>
+										<a href="#"><i class="fab fa-twitter"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fab fa-facebook-f"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fab fa-instagram"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fab fa-github"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fas fa-basketball-ball"></i></a>
+									</li>
+								</ul>
+								<ul class="menu-horizontal">
+									<li>
+										<a href="#"><i class="fab fa-twitter cercle"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fab fa-facebook-f cercle"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fab fa-instagram cercle"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fab fa-github cercle"></i></a>
+									</li>
+									<li>
+										<a href="#"><i class="fas fa-basketball-ball cercle"></i></a>
+									</li>
+								</ul>
+							</div>
+							<div>
+								<h4>DEFINITION COMPREND PAS LE PRINCIPE ICI DEMANDER INFOS</h4>
+								<h5>Item 1</h5>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus necessitatibus at perspiciatis minima molestias earum velit!
+									A, similique numquam delectus, maxime, id dolores ad vel ex dolore cum tempore?
+								</p>
+								<h5>Item 2</h5>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus necessitatibus at perspiciatis minima molestias earum velit!
+									A, similique numquam delectus, maxime, id dolores ad vel ex dolore cum tempore?
+								</p>
+								<h5>Item 3</h5>
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus necessitatibus at perspiciatis minima molestias earum velit!
+									A, similique numquam delectus, maxime, id dolores ad vel ex dolore cum tempore?
+								</p>
+							</div>
+						</section>
+						<div class="line-separator"></div>
+						<!-- BLOQUECOTE -->
+						<section>
+							<h3>BLOCKQUOTE & Q</h3>
+							<blockquote cite="http://developer.mozilla.org">
+								<p>Ceci est une citation issue du Mozilla Developer Network.</p>
+							</blockquote>
+						</section>
+						<div class="line-separator"></div>
+						<!-- TABLEAUX  -->
+						<section>
+							<h3 class="h3">TABLE</h3>
+							<h4 class="h4">DEFAUT</h4>
+							<table>
+								<caption>
+									Titre du tableau classique
+								</caption>
 								<tr>
 									<th>NAME</th>
 									<th>DESCRIPTION</th>
 									<th>PRICE</th>
 								</tr>
-							</thead>
-							<tbody>
-								<!-- Corps du tableau -->
 								<tr>
 									<td>Item1</td>
 									<td>Lorem ipsum, dolor sit amet consectetur libero</td>
@@ -297,184 +285,232 @@
 									<td></td>
 									<td>169.98</td>
 								</tr>
-							</tbody>
-						</table>
-					</section>
-					<div class="line-separator"></div>
-					<!-- BUTTONS -->
-					<section>
-						<h3 class="h3">BUTTONS</h3>
-						<div>
-							<button class="primary">[PRIMARY]</button>
-							<button>DEFAULT</button>
-						</div>
-						<div>
-							<button class="primary large">[LARGE]</button>
-							<button class="">DEFAULT</button>
-							<button class="small">[SMALL]</button>
-						</div>
-						<div class="grid">
-							<div class="m-col-6">
-								<button class="primary stretch small">[STRETCH]+[SMALL]</button>
-							</div>
-							<div class="m-col-6">
-								<button class="stretch small">[STRETCH]+[SMALL]</button>
-							</div>
-						</div>
-						<div class="grid">
-							<div class="m-col-6">
-								<button class="primary stretch">[STRETCH]</button>
-							</div>
-							<div class="m-col-6">
-								<button class="stretch">[STRETCH]</button>
-							</div>
-						</div>
-						<div class="grid">
-							<div class="m-col-6">
-								<button class="primary stretch large">[STRETCH]+[LARGE]</button>
-							</div>
-							<div class="m-col-6">
-								<button class="stretch large">[STRETCH]+[LARGE]</button>
-							</div>
-						</div>
-						<div>
-							<button class="primary"><i class="fas fa-search"></i>ICON</button>
-							<button><i class="fas fa-download"></i>ICON</button>
-						</div>
-						<div>
-							<button class="primary disabled">[PRIMARY]</button>
-							<button class="disabled">DEFAULT</button>
-						</div>
-					</section>
-					<div class="line-separator"></div>
-					<!-- FORM  -->
-					<section>
-						<h3 class="h3">FORM</h3>
-						<form class="formulaire-1 grid" action="./message_form.html" method="GET">
-							<div class="s-col-6">
-								<input type="text" name="name" placeholder="Name" />
-							</div>
-							<div class="s-col-6">
-								<input type="email" name="email" placeholder="Email" />
+							</table>
+							<h4 class="h4">ALTERNATE</h4>
+							<table class="alternate">
+								<caption>
+									Titre Tableau structuré
+								</caption>
+								<!-- Tableau structuré Pas obligatoire mais utilisé si tableau avec beaucoup de données -->
+								<thead>
+									<!-- En tête du tableau -->
+									<tr>
+										<th>NAME</th>
+										<th>DESCRIPTION</th>
+										<th>PRICE</th>
+									</tr>
+								</thead>
+								<tbody>
+									<!-- Corps du tableau -->
+									<tr>
+										<td>Item1</td>
+										<td>Lorem ipsum, dolor sit amet consectetur libero</td>
+										<td>19.99</td>
+									</tr>
+									<tr>
+										<td>Item2</td>
+										<td>Lorem ipsum, dolor sit amet consectetur libero</td>
+										<td>29.99</td>
+									</tr>
+									<tr>
+										<td>Item3</td>
+										<td>Lorem ipsum, dolor sit amet consectetur libero</td>
+										<td>39.99</td>
+									</tr>
+									<tr>
+										<td>Item4</td>
+										<td>Lorem ipsum, dolor sit amet consectetur libero</td>
+										<td>49.99</td>
+									</tr>
+									<tr>
+										<td>Item4</td>
+										<td>Lorem ipsum, dolor sit amet consectetur libero</td>
+										<td>49.99</td>
+									</tr>
+									<tr>
+										<td></td>
+										<td></td>
+										<td>169.98</td>
+									</tr>
+								</tbody>
+							</table>
+						</section>
+						<div class="line-separator"></div>
+						<!-- BUTTONS -->
+						<section>
+							<h3 class="h3">BUTTONS</h3>
+							<div>
+								<button class="primary">[PRIMARY]</button>
+								<button>DEFAULT</button>
 							</div>
 							<div>
-								<select name="category" id="category">
-									<option value="" disabled="disabled" selected="selected">-Category-</option>
-									<option value="category-1">Categorie 1</option>
-									<option value="category-2">Categorie 2</option>
-									<option value="category-3">Categorie 3</option>
-									<option value="category-4">Categorie 4</option>
-								</select>
+								<button class="primary large">[LARGE]</button>
+								<button class="">DEFAULT</button>
+								<button class="small">[SMALL]</button>
 							</div>
-							<div class="input-radio">
-								<label for="radio-1"> <input id="radio-1" type="radio" name="level" value="low" checked="checked" />Low </label>
-								<label for="radio-2"> <input id="radio-2" type="radio" name="level" value="normal" />Normal </label>
-								<label for="radio-3"> <input id="radio-3" type="radio" name="level" value="high" />High </label>
+							<div class="grid">
+								<div class="m-col-6">
+									<button class="primary stretch small">[STRETCH]+[SMALL]</button>
+								</div>
+								<div class="m-col-6">
+									<button class="stretch small">[STRETCH]+[SMALL]</button>
+								</div>
 							</div>
-							<div><input type="checkbox" name="copyemail" />Email me a copy <input type="checkbox" name="human" checked="checked" />I am a human</div>
+							<div class="grid">
+								<div class="m-col-6">
+									<button class="primary stretch">[STRETCH]</button>
+								</div>
+								<div class="m-col-6">
+									<button class="stretch">[STRETCH]</button>
+								</div>
+							</div>
+							<div class="grid">
+								<div class="m-col-6">
+									<button class="primary stretch large">[STRETCH]+[LARGE]</button>
+								</div>
+								<div class="m-col-6">
+									<button class="stretch large">[STRETCH]+[LARGE]</button>
+								</div>
+							</div>
 							<div>
-								<textarea name="message" id="message" cols="30" rows="10">
+								<button class="primary"><i class="fas fa-search"></i>ICON</button>
+								<button><i class="fas fa-download"></i>ICON</button>
+							</div>
+							<div>
+								<button class="primary disabled">[PRIMARY]</button>
+								<button class="disabled">DEFAULT</button>
+							</div>
+						</section>
+						<div class="line-separator"></div>
+						<!-- FORM  -->
+						<section>
+							<h3 class="h3">FORM</h3>
+							<form class="formulaire-1 grid" action="./message_form.html" method="GET">
+								<div class="s-col-6">
+									<input type="text" name="name" placeholder="Name" />
+								</div>
+								<div class="s-col-6">
+									<input type="email" name="email" placeholder="Email" />
+								</div>
+								<div>
+									<select name="category" id="category">
+										<option value="" disabled="disabled" selected="selected">-Category-</option>
+										<option value="category-1">Categorie 1</option>
+										<option value="category-2">Categorie 2</option>
+										<option value="category-3">Categorie 3</option>
+										<option value="category-4">Categorie 4</option>
+									</select>
+								</div>
+								<div class="input-radio">
+									<label for="radio-1"> <input id="radio-1" type="radio" name="level" value="low" checked="checked" />Low </label>
+									<label for="radio-2"> <input id="radio-2" type="radio" name="level" value="normal" />Normal </label>
+									<label for="radio-3"> <input id="radio-3" type="radio" name="level" value="high" />High </label>
+								</div>
+								<div><input type="checkbox" name="copyemail" />Email me a copy <input type="checkbox" name="human" checked="checked" />I am a human</div>
+								<div>
+									<textarea name="message" id="message" cols="30" rows="10">
 Enter your message
 								</textarea
-								>
+									>
+								</div>
+								<div>
+									<input type="submit" />
+									<input type="reset" />
+								</div>
+							</form>
+						</section>
+						<div class="line-separator"></div>
+						<!-- IMAGE -->
+						<section>
+							<h3 class="h3">IMAGE</h3>
+							<h4 class="h4">STRETCH</h4>
+							<div><img class="stretch" src="https://picsum.photos/400/150" alt="image_stretch" /></div>
+							<h4 class="h4">GALLERY</h4>
+							<div class="thumbnails largeur-img-300 hauteur-img-300">
+								<img class="zoom" src="https://picsum.photos/200/200" alt="image" />
+								<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
+								<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
+								<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
+								<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
+								<img class="zoom" src="https://picsum.photos/500/500" alt="image" />
+								<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
+								<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
+								<img class="zoom" src="https://picsum.photos/500/500" alt="image" />
 							</div>
-							<div>
-								<input type="submit" />
-								<input type="reset" />
+							<h4 class="h4">FLOAT LEFT & RIGHT</h4>
+							<div class="float-container-clear">
+								<img class="float-left" src="https://picsum.photos/500/500" alt="image" />
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi maiores! Corporis, ad illo tempore facilis possimus ullam voluptatem
+									iste dolorem quibusdam optio doloremque dolor voluptas fugit animi neque officiis. Molestias voluptas sed iusto repellendus officiis quaerat,
+									nemo, atque fugiat sunt ipsum ipsam quasi in voluptatibus. Quod assumenda eaque eos eveniet culpa dicta ex deserunt ea, pariatur, doloremque
+									quidem rerum. Eum facere quidem beatae magni totam ut consectetur voluptatem eius, sit quas harum natus est molestiae ipsa tempora culpa ex
+									ratione quisquam? Consequuntur nostrum nobis optio quae culpa perspiciatis eaque? Totam fuga repudiandae dolor est ex quibusdam adipisci qui
+									beatae fugiat, ea cupiditate rerum iste tempora cum vero incidunt, expedita quae sint iure porro corporis placeat unde? Exercitationem, hic
+									aliquam. Iste rem ducimus maxime. Velit accusantium ipsam eos magnam alias sit ullam, vero eum cumque incidunt et earum, corporis, consequatur
+									omnis repellendus praesentium officiis. Exercitationem deserunt natus ut porro suscipit? Soluta magnam quod voluptate praesentium delectus
+									expedita. Hic sit illum atque, ipsam at suscipit velit delectus a quaerat dolorum aspernatur nihil dignissimos. In, nobis! Sapiente error quos
+									obcaecati id harum. Voluptatem nisi consequuntur iste vitae eum aliquid officia autem molestias est exercitationem reprehenderit totam
+									asperiores itaque voluptas cupiditate, laborum sapiente officiis maiores distinctio sed vel porro quo. Repellendus, consequatur pariatur.
+									Debitis velit excepturi nisi quas omnis perspiciatis dolorum distinctio, cumque, est amet corrupti officiis accusantium quasi deleniti sit
+									nihil pariatur eos voluptas? Quas ipsum porro perferendis ducimus vitae, ullam harum. Tempora porro excepturi error magnam repellendus
+									repellat, corporis rem magni! Incidunt magnam temporibus pariatur maxime nihil aspernatur, nulla voluptatem minima earum iusto commodi.
+									Quisquam eius soluta corporis recusandae laudantium aspernatur. Ut saepe sed tempore ratione eos suscipit ipsa, atque debitis id quaerat nihil
+									inventore nemo, distinctio quae ab architecto officia aperiam officiis quas. Officia distinctio dolore reiciendis vero accusantium alias!
+									Nihil officiis omniss quia illum corporis ut maxime suscipit eum vero odio necessitatibus, dolorum quod amet a. Sint molestias maiores
+									tempora. Id magnam est voluptatum ratione, distinctio ab, fugiat ea iusto ipsa maxime reiciendis alias? Doloribus error recusandae, nesciunt
+									praesentium saepe voluptates optio dolorem, ullam, deserunt eaque laudantium vel tempora sit!
+								</p>
 							</div>
-						</form>
-					</section>
-					<div class="line-separator"></div>
-					<!-- IMAGE -->
-					<section>
-						<h3 class="h3">IMAGE</h3>
-						<h4 class="h4">STRETCH</h4>
-						<div><img class="stretch" src="https://picsum.photos/400/150" alt="image_stretch" /></div>
-						<h4 class="h4">GALLERY</h4>
-						<div class="thumbnails largeur-img-300 hauteur-img-300">
-							<img class="zoom" src="https://picsum.photos/200/200" alt="image" />
-							<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
-							<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
-							<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
-							<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
-							<img class="zoom" src="https://picsum.photos/500/500" alt="image" />
-							<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
-							<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
-							<img class="zoom" src="https://picsum.photos/500/500" alt="image" />
-						</div>
-						<h4 class="h4">FLOAT LEFT & RIGHT</h4>
-						<div class="float-container-clear">
-							<img class="float-left" src="https://picsum.photos/500/500" alt="image" />
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi maiores! Corporis, ad illo tempore facilis possimus ullam voluptatem
-								iste dolorem quibusdam optio doloremque dolor voluptas fugit animi neque officiis. Molestias voluptas sed iusto repellendus officiis quaerat,
-								nemo, atque fugiat sunt ipsum ipsam quasi in voluptatibus. Quod assumenda eaque eos eveniet culpa dicta ex deserunt ea, pariatur, doloremque
-								quidem rerum. Eum facere quidem beatae magni totam ut consectetur voluptatem eius, sit quas harum natus est molestiae ipsa tempora culpa ex
-								ratione quisquam? Consequuntur nostrum nobis optio quae culpa perspiciatis eaque? Totam fuga repudiandae dolor est ex quibusdam adipisci qui
-								beatae fugiat, ea cupiditate rerum iste tempora cum vero incidunt, expedita quae sint iure porro corporis placeat unde? Exercitationem, hic
-								aliquam. Iste rem ducimus maxime. Velit accusantium ipsam eos magnam alias sit ullam, vero eum cumque incidunt et earum, corporis, consequatur
-								omnis repellendus praesentium officiis. Exercitationem deserunt natus ut porro suscipit? Soluta magnam quod voluptate praesentium delectus
-								expedita. Hic sit illum atque, ipsam at suscipit velit delectus a quaerat dolorum aspernatur nihil dignissimos. In, nobis! Sapiente error quos
-								obcaecati id harum. Voluptatem nisi consequuntur iste vitae eum aliquid officia autem molestias est exercitationem reprehenderit totam
-								asperiores itaque voluptas cupiditate, laborum sapiente officiis maiores distinctio sed vel porro quo. Repellendus, consequatur pariatur.
-								Debitis velit excepturi nisi quas omnis perspiciatis dolorum distinctio, cumque, est amet corrupti officiis accusantium quasi deleniti sit nihil
-								pariatur eos voluptas? Quas ipsum porro perferendis ducimus vitae, ullam harum. Tempora porro excepturi error magnam repellendus repellat,
-								corporis rem magni! Incidunt magnam temporibus pariatur maxime nihil aspernatur, nulla voluptatem minima earum iusto commodi. Quisquam eius
-								soluta corporis recusandae laudantium aspernatur. Ut saepe sed tempore ratione eos suscipit ipsa, atque debitis id quaerat nihil inventore nemo,
-								distinctio quae ab architecto officia aperiam officiis quas. Officia distinctio dolore reiciendis vero accusantium alias! Nihil officiis omniss
-								quia illum corporis ut maxime suscipit eum vero odio necessitatibus, dolorum quod amet a. Sint molestias maiores tempora. Id magnam est
-								voluptatum ratione, distinctio ab, fugiat ea iusto ipsa maxime reiciendis alias? Doloribus error recusandae, nesciunt praesentium saepe
-								voluptates optio dolorem, ullam, deserunt eaque laudantium vel tempora sit!
-							</p>
-						</div>
-						<div class="float-container-clear">
-							<img class="float-right" src="https://picsum.photos/500/500" alt="image" />
-							<p>
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi maiores! Corporis, ad illo tempore facilis possimus ullam voluptatem
-								iste dolorem quibusdam optio doloremque dolor voluptas fugit animi neque officiis. Molestias voluptas sed iusto repellendus officiis quaerat,
-								nemo, atque fugiat sunt ipsum ipsam quasi in voluptatibus. Quod assumenda eaque eos eveniet culpa dicta ex deserunt ea, pariatur, doloremque
-								quidem rerum. Eum facere quidem beatae magni totam ut consectetur voluptatem eius, sit quas harum natus est molestiae ipsa tempora culpa ex
-								ratione quisquam? Consequuntur nostrum nobis optio quae culpa perspiciatis eaque? Totam fuga repudiandae dolor est ex quibusdam adipisci qui
-								beatae fugiat, ea cupiditate rerum iste tempora cum vero incidunt, expedita quae sint iure porro corporis placeat unde? Exercitationem, hic
-								aliquam. Iste rem ducimus maxime. Velit accusantium ipsam eos magnam alias sit ullam, vero eum cumque incidunt et earum, corporis, consequatur
-								omnis repellendus praesentium officiis. Exercitationem deserunt natus ut porro suscipit? Soluta magnam quod voluptate praesentium delectus
-								expedita. Hic sit illum atque, ipsam at suscipit velit delectus a quaerat dolorum aspernatur nihil dignissimos. In, nobis! Sapiente error quos
-								obcaecati id harum. Voluptatem nisi consequuntur iste vitae eum aliquid officia autem molestias est exercitationem reprehenderit totam
-								asperiores itaque voluptas cupiditate, laborum sapiente officiis maiores distinctio sed vel porro quo. Repellendus, consequatur pariatur.
-								Debitis velit excepturi nisi quas omnis perspiciatis dolorum distinctio, cumque, est amet corrupti officiis accusantium quasi deleniti sit nihil
-								pariatur eos voluptas? Quas ipsum porro perferendis ducimus vitae, ullam harum. Tempora porro excepturi error magnam repellendus repellat,
-								corporis rem magni! Incidunt magnam temporibus pariatur maxime nihil aspernatur, nulla voluptatem minima earum iusto commodi. Quisquam eius
-								soluta corporis recusandae laudantium aspernatur. Ut saepe sed tempore ratione eos suscipit ipsa, atque debitis id quaerat nihil inventore nemo,
-								distinctio quae ab architecto officia aperiam officiis quas. Officia distinctio dolore reiciendis vero accusantium alias! Nihil officiis omniss
-								quia illum corporis ut maxime suscipit eum vero odio necessitatibus, dolorum quod amet a. Sint molestias maiores tempora. Id magnam est
-								voluptatum ratione, distinctio ab, fugiat ea iusto ipsa maxime reiciendis alias? Doloribus error recusandae, nesciunt praesentium saepe
-								voluptates optio dolorem, ullam, deserunt eaque laudantium vel tempora sit!
-							</p>
-						</div>
-					</section>
-					<div class="line-separator"></div>
-					<!-- BOX  -->
-					<section>
-						<h3 class="h3">BOX</h3>
-						<div class="box box-stretch-width-100 box-stretch-height-100">
-							<p>
-								Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus magni animi necessitatibus sed dolore odio illum temporibus ratione? Possimus
-								velit unde reprehenderit fuga sint repudiandae ea expedita culpa voluptatibus quisquam! Dolor sapiente dolore consequatur a, esse porro? Officia
-								quasi corporis deserunt, aspernatur molestiae vel, omnis veritatis aut consequuntur quaerat perspiciatis, nam corrupti doloribus enim iure
-								eveniet voluptate tempora officiis ducimus. Veritatis numquam maxime at laboriosam consequuntur incidunt dolor id voluptates suscipit molestias
-								repellendus voluptatem qui, hic consequatur quae? Accusantium doloribus sapiente delectus suscipit numquam magni esse placeat ex accusamus
-								fugiat. Reprehenderit quisquam vel culpa. Odio alias reiciendis impedit reprehenderit maxime repudiandae corrupti ad, voluptatibus sed molestiae
-								nisi debitis sunt itaque unde, veniam, amet dolorem! Harum labore hic magnam tempore autem. Recusandae ipsum beatae sequi enim magnam et ipsam
-								suscipit, dolores at nisi saepe maiores voluptatum repellendus perferendis, magni rerum necessitatibus quo voluptate a. Magnam tempora esse
-								neque voluptatum autem omnis!
-							</p>
-						</div>
-					</section>
-					<div class="line-separator"></div>
-					<!-- PREFORMATTED   -->
-					<section>
-						<h3 class="h3">PREFORMATTED</h3>
-						<pre>
+							<div class="float-container-clear">
+								<img class="float-right" src="https://picsum.photos/500/500" alt="image" />
+								<p>
+									Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, commodi maiores! Corporis, ad illo tempore facilis possimus ullam voluptatem
+									iste dolorem quibusdam optio doloremque dolor voluptas fugit animi neque officiis. Molestias voluptas sed iusto repellendus officiis quaerat,
+									nemo, atque fugiat sunt ipsum ipsam quasi in voluptatibus. Quod assumenda eaque eos eveniet culpa dicta ex deserunt ea, pariatur, doloremque
+									quidem rerum. Eum facere quidem beatae magni totam ut consectetur voluptatem eius, sit quas harum natus est molestiae ipsa tempora culpa ex
+									ratione quisquam? Consequuntur nostrum nobis optio quae culpa perspiciatis eaque? Totam fuga repudiandae dolor est ex quibusdam adipisci qui
+									beatae fugiat, ea cupiditate rerum iste tempora cum vero incidunt, expedita quae sint iure porro corporis placeat unde? Exercitationem, hic
+									aliquam. Iste rem ducimus maxime. Velit accusantium ipsam eos magnam alias sit ullam, vero eum cumque incidunt et earum, corporis, consequatur
+									omnis repellendus praesentium officiis. Exercitationem deserunt natus ut porro suscipit? Soluta magnam quod voluptate praesentium delectus
+									expedita. Hic sit illum atque, ipsam at suscipit velit delectus a quaerat dolorum aspernatur nihil dignissimos. In, nobis! Sapiente error quos
+									obcaecati id harum. Voluptatem nisi consequuntur iste vitae eum aliquid officia autem molestias est exercitationem reprehenderit totam
+									asperiores itaque voluptas cupiditate, laborum sapiente officiis maiores distinctio sed vel porro quo. Repellendus, consequatur pariatur.
+									Debitis velit excepturi nisi quas omnis perspiciatis dolorum distinctio, cumque, est amet corrupti officiis accusantium quasi deleniti sit
+									nihil pariatur eos voluptas? Quas ipsum porro perferendis ducimus vitae, ullam harum. Tempora porro excepturi error magnam repellendus
+									repellat, corporis rem magni! Incidunt magnam temporibus pariatur maxime nihil aspernatur, nulla voluptatem minima earum iusto commodi.
+									Quisquam eius soluta corporis recusandae laudantium aspernatur. Ut saepe sed tempore ratione eos suscipit ipsa, atque debitis id quaerat nihil
+									inventore nemo, distinctio quae ab architecto officia aperiam officiis quas. Officia distinctio dolore reiciendis vero accusantium alias!
+									Nihil officiis omniss quia illum corporis ut maxime suscipit eum vero odio necessitatibus, dolorum quod amet a. Sint molestias maiores
+									tempora. Id magnam est voluptatum ratione, distinctio ab, fugiat ea iusto ipsa maxime reiciendis alias? Doloribus error recusandae, nesciunt
+									praesentium saepe voluptates optio dolorem, ullam, deserunt eaque laudantium vel tempora sit!
+								</p>
+							</div>
+						</section>
+						<div class="line-separator"></div>
+						<!-- BOX  -->
+						<section>
+							<h3 class="h3">BOX</h3>
+							<div class="box-border-1 color-3">
+								<!-- box-stretch-width-100 box-stretch-height-100"> -->
+								<p>
+									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus magni animi necessitatibus sed dolore odio illum temporibus ratione?
+									Possimus velit unde reprehenderit fuga sint repudiandae ea expedita culpa voluptatibus quisquam! Dolor sapiente dolore consequatur a, esse
+									porro? Officia quasi corporis deserunt, aspernatur molestiae vel, omnis veritatis aut consequuntur quaerat perspiciatis, nam corrupti
+									doloribus enim iure eveniet voluptate tempora officiis ducimus. Veritatis numquam maxime at laboriosam consequuntur incidunt dolor id
+									voluptates suscipit molestias repellendus voluptatem qui, hic consequatur quae? Accusantium doloribus sapiente delectus suscipit numquam magni
+									esse placeat ex accusamus fugiat. Reprehenderit quisquam vel culpa. Odio alias reiciendis impedit reprehenderit maxime repudiandae corrupti
+									ad, voluptatibus sed molestiae nisi debitis sunt itaque unde, veniam, amet dolorem! Harum labore hic magnam tempore autem. Recusandae ipsum
+									beatae sequi enim magnam et ipsam suscipit, dolores at nisi saepe maiores voluptatum repellendus perferendis, magni rerum necessitatibus quo
+									voluptate a. Magnam tempora esse neque voluptatum autem omnis!
+								</p>
+							</div>
+						</section>
+						<div class="line-separator"></div>
+						<!-- PREFORMATTED   -->
+						<section>
+							<h3 class="h3">PREFORMATTED</h3>
+							<pre>
 	i=0; 
 	while(!deck.isInOrder()){ 
 		print 'Iteration' + i; 
@@ -483,75 +519,91 @@ Enter your message
 	} 
 	print 'It took' + i + 'iteration to sort the deck';
 						</pre
-						>
-					</section>
-				</div>
-				<!-- FOOTER PRINCIPAL ET REUTILISABLE -->
-				<footer>
-					<div class="container-contenu-2 grid">
-						<div class="xl-col-6">
-							<form action="./formulaire.html" method="GET">
-								<div>
-									<label class="display-block" for="nom-2">NAME</label>
-									<input id="nom-2" type="text" name="name" />
-								</div>
-								<div>
-									<label class="display-block" for="email-2">EMAIL</label>
-									<input type="email" name="email" id="email-2" />
-								</div>
-								<div>
-									<label for="message-2">MESSAGE</label>
-									<textarea name="message" id="message-2" cols="30" rows="40"> </textarea>
-								</div>
-								<div>
-									<input type="submit" />
-									<input type="reset" />
-								</div>
-							</form>
-						</div>
-						<!-- ADDRESSE FOOTER -->
-						<div class="xl-col-6">
-							<address>
-								<div class="box box-height-100" style="border-right: 0; border-bottom: 0; border-top: 0">
-									<p class="title-2 display-inline-block" style="margin-left: 25px">ADDRESS</p>
-									<p class="title-3 display-inline-block" style="margin-left: 50px">9 rue Charles Deliège 4247</p>
-									<p class="title-3 display-inline-block" style="margin-left: 170px">Fléron, TN 00000-0000</p>
-								</div>
-								<div class="box box-height-100" style="border-right: 0; border-bottom: 0">
-									<p class="title-2 display-inline-block" style="margin-left: 25px">PHONE</p>
-									<a class="title-3" href="tel:+320000000" style="margin-left: 70px">+32000000000</a>
-								</div>
-
-								<div class="box box-height-100" style="border-right: 0; border-bottom: 0">
-									<p class="title-2 display-inline-block" style="margin-left: 25px">EMAIL</p>
-									<a href="mailto:info@untilted.tld" style="margin-left: 70px">mailto:info@untilted.tld</a>
-								</div>
-								<div class="box box-height-100" style="border-right: 0; border-bottom: 0">
-									<p class="title-2 display-inline-block" style="margin-left: 25px">SOCIAL</p>
-									<ul class="menu-horizontal display-inline-block" style="margin-left: 70px">
-										<li>
-											<a href="#"><i class="fab fa-twitter cercle"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fab fa-facebook-f cercle"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fab fa-instagram cercle"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fab fa-github cercle"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fas fa-basketball-ball cercle"></i></a>
-										</li>
-									</ul>
-								</div>
-							</address>
-						</div>
+							>
+						</section>
 					</div>
-				</footer>
+					<!-- FOOTER PRINCIPAL ET REUTILISABLE -->
+
+					<footer>
+						<div class="container-footer background-color-neutral-1 grid">
+							<div class="xl-col-6">
+								<form action="./formulaire.html" method="GET">
+									<div>
+										<label class="display-block" for="nom-2">NAME</label>
+										<input id="nom-2" type="text" name="name" />
+									</div>
+									<div>
+										<label class="display-block" for="email-2">EMAIL</label>
+										<input type="email" name="email" id="email-2" />
+									</div>
+									<div>
+										<label for="message-2">MESSAGE</label>
+										<textarea name="message" id="message-2" cols="30" rows="40"> </textarea>
+									</div>
+									<div>
+										<input type="submit" />
+										<input type="reset" />
+									</div>
+								</form>
+							</div>
+							<!-- ADDRESSE FOOTER -->
+							<div class="xl-col-6">
+								<address>
+									<div class="box-border-1 box-height-100" style="border-right: 0; border-bottom: 0; border-top: 0">
+										<p class="title-2 display-inline-block" style="margin-left: 25px">ADDRESS</p>
+										<p class="title-3 display-inline-block" style="margin-left: 50px">9 rue Charles Deliège 4247</p>
+										<p class="title-3 display-inline-block" style="margin-left: 170px">Fléron, TN 00000-0000</p>
+									</div>
+									<div class="box-border-1 box-height-100" style="border-right: 0; border-bottom: 0">
+										<p class="title-2 display-inline-block" style="margin-left: 25px">PHONE</p>
+										<a class="title-3" href="tel:+320000000" style="margin-left: 70px">+32000000000</a>
+									</div>
+
+									<div class="box-border-1 box-height-100" style="border-right: 0; border-bottom: 0">
+										<p class="title-2 display-inline-block" style="margin-left: 25px">EMAIL</p>
+										<a href="mailto:info@untilted.tld" style="margin-left: 70px">mailto:info@untilted.tld</a>
+									</div>
+									<div class="box-border-1 box-height-100" style="border-right: 0; border-bottom: 0">
+										<p class="title-2 display-inline-block" style="margin-left: 25px">SOCIAL</p>
+										<ul class="menu-horizontal display-inline-block" style="margin-left: 70px">
+											<li>
+												<a href="#"><i class="fab fa-twitter cercle"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-facebook-f cercle"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-instagram cercle"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-github cercle"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fas fa-basketball-ball cercle"></i></a>
+											</li>
+										</ul>
+									</div>
+								</address>
+							</div>
+						</div>
+					</footer>
+				</div>
+				<!--fin container secondaire-->
+				<!-- BAS DE PAGE ET REUTILISABLE  -->
+
+				<div class="bas-de-page">
+					<ul class="text-center menu-horizontal">
+						<li class="text-color-neutral-1">UNTITLED</li>
+						<li class="text-color-neutral-1">|</li>
+						<li class="text-color-neutral-1 design">DESIGN:</li>
+						<li><a class="text-color-neutral-1" href="#">IEPS</a></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-		<script src="./app.js"></script>
+			<!-- fin container principal-->
+			<script src="./app.js"></script>
+
+			<script src="./app.js"></script>
+		</body>
 	</body>
 </html>

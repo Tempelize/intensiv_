@@ -5,3 +5,5 @@ const police2=window.getComputedStyle(document.getElementById('police-font-2')).
 // MODIFICATION DU TEXTE 
 document.getElementById('police-font-1').innerText=police1;
 document.getElementById('police-font-2').innerText=police2;
+
+// RAJOUTER POUR LE HEADER
