@@ -45,6 +45,13 @@
 // .p-3
 // .font-1 => typo de type font-1
 // .font-2 => typo de type font-2
+// .text-color-1 => couleur texte de la couleur : color 1
+// .text-color-2
+// .text-color-3
+// .text-color-text
+// .text-color-neutral-1
+// .text-color-neutral-2
+
 //----------------------------------------------------------------------
 // VARIABLES
 // DEFAULT VALUES
@@ -75,7 +82,7 @@ $margin-h1: 0 0 0.7rem 0;
 $font-h2: $font-1;
 $font-color-h2: $color-text;
 $font-size-h2: 1.5rem;
-$font-weight-h2: 300;
+$font-weight-h2: 500;
 $line-height-h2: 1.5;
 $letter-spacing-h2: 0rem;
 $margin-h2: 0 0 0.7rem 0;
@@ -84,7 +91,7 @@ $margin-h2: 0 0 0.7rem 0;
 $font-h3: $font-1;
 $font-color-h3: $color-text;
 $font-size-h3: 1.25rem;
-$font-weight-h3: 300;
+$font-weight-h3: 500;
 $line-height-h3: 1.5;
 $letter-spacing-h3: 0rem;
 $margin-h3: 0 0 0.7rem 0;
@@ -93,7 +100,7 @@ $margin-h3: 0 0 0.7rem 0;
 $font-h4: $font-1;
 $font-color-h4: $color-text;
 $font-size-h4: 1.1rem;
-$font-weight-h4: 300;
+$font-weight-h4: 500;
 $line-height-h4: 1.2;
 $letter-spacing-h4: 0rem;
 $margin-h4: 0 0 0.7rem 0;
@@ -102,7 +109,7 @@ $margin-h4: 0 0 0.7rem 0;
 $font-h5: $font-1;
 $font-color-h5: $color-text;
 $font-size-h5: 1rem;
-$font-weight-h5: 300;
+$font-weight-h5: 500;
 $line-height-h5: 1.2;
 $letter-spacing-h5: 0rem;
 $margin-h5: 0 0 0.7rem 0;
@@ -111,7 +118,7 @@ $margin-h5: 0 0 0.7rem 0;
 $font-h6: $font-1;
 $font-color-h6: $color-text;
 $font-size-h6: 0.9rem;
-$font-weight-h6: 300;
+$font-weight-h6: 500;
 $line-height-h6: 1.2;
 $letter-spacing-h6: 0rem;
 $margin-h6: 0 0 0.7rem 0;
@@ -144,7 +151,7 @@ $underlined-style: solid 1px;
 
 //LINKS
 $link-color: $color-text;
-$link-color-hover: lighten($link-color, 35%);
+$link-color-hover: $color-1; //lighten($link-color, 35%);
 $link-decoration: none;
 $link-hover-decoration: none;
 $link-background: none;
@@ -375,6 +382,9 @@ a,
 	&:hover {
 		color: $link-color-hover;
 		text-decoration: $link-hover-decoration;
+		i {
+			color: $link-color-hover;
+		}
 	}
 }
 // TITRES - SOUS-TITRES - PARAGRAPHES
@@ -483,6 +493,26 @@ q {
 	border-left: $q-border-left;
 	margin-left: $q-margin-left;
 	padding-left: $q-padding-left;
+}
+
+// COULEURS TYPO
+.text-color-1 {
+	color: $color-1;
+}
+.text-color-2 {
+	color: $color-2;
+}
+.text-color-3 {
+	color: $color-3;
+}
+.text-color-text {
+	color: $color-text;
+}
+.text-color-neutral-1 {
+	color: $color-neutral-1;
+}
+.text-color-neutral-2 {
+	color: $color-neutral-2;
 }
 
 // HELPERS TYPO

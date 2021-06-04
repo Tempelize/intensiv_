@@ -6,9 +6,11 @@
 // .display-inlineblock
 // .display-inline
 // .display-none
-// .text-center => text-align
+// .text-center => text-align: center
 // .text-left
 // .text-right
+// .text-justify
+// .center => centre un block dans un block grâce à margin: auto;
 // .line-separator => ligne de séparation
 //------------------------------------------------
 // VARIABLES
@@ -55,10 +57,22 @@ $lineSeparatorColor: $color-neutral-2;
 .text-right {
 	text-align: right;
 }
+.text-justify {
+	text-align: justify;
+}
+.center {
+	margin: auto;
+}
 .line-separator {
 	border-bottom: $lineSeparatorThick solid;
 	width: $lineSeparatorWith;
-	margin: $lineSeparatorMarginTop auto;
+	margin: $lineSeparatorMarginTop;
+	color: $lineSeparatorColor;
+}
+.line-separator-auto {
+	border-bottom: $lineSeparatorThick solid;
+	width: auto;
+	margin: $lineSeparatorMarginTop;
 	color: $lineSeparatorColor;
 }
 .is-actif {

@@ -1,6 +1,9 @@
 @import "./tempelize/scss/index.scss";
 
-// DISPOSITION GLOBALE
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//SURCHARGE GENERAL AU PROJET
+//
+// DISPOSITION GLOBALE (MISE EN PAGE)
 .container-principal {
 	// background: black;
 	width: 100%;
@@ -22,7 +25,7 @@
 		.container-footer {
 			// background: yellow;
 			width: 100%;
-			padding-left: 0.5rem;
+			// padding-left: 0.5rem;
 		}
 	}
 }
@@ -32,11 +35,14 @@
 	align-items: center;
 	nav {
 		ul {
-			margin: 0 0.5rem 0 0.5rem;
+			margin: 0 0.5rem 0 0;
 			li {
 				a {
 					padding: 0.5rem;
 				}
+			}
+			li:not(.is-actif):hover {
+				background: lighten($color-3, 35%);
 			}
 		}
 	}
@@ -44,14 +50,9 @@
 	ul {
 		margin: 0 0.5rem 0 0.5rem;
 		padding-right: 1rem;
-		li {
-			a {
-				li {
-				}
-			}
-		}
 	}
 }
+
 .bas-de-page {
 	ul {
 		li {
@@ -60,11 +61,11 @@
 		}
 	}
 }
-
-.design {
-	margin-right: 0;
+// HELPERS
+.is-actif {
+	background-color: $color-neutral-1;
+	color: $color-text;
 }
-
 .background-special {
 	background: radial-gradient($color-3 40%, $color-text);
 }
@@ -72,10 +73,49 @@
 	background: linear-gradient($color-3, $color-text 95%);
 }
 
-////////////////////////////////////////////////////
-// HELPERS
-//////////////////////////////////////////////////
-.is-actif {
-	background-color: $color-neutral-1;
-	color: $color-text;
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// SURCHARGE INDEX.HTML
+
+#post-mis-en-avant-auteur {
+	min-width: 285px;
+}
+.card {
+	margin: 6rem 0 6rem 0;
+	.card-time-auteur {
+	}
+	.card-title {
+		margin-top: 3rem;
+	}
+	.card-sub-title {
+		margin-top: 3rem;
+	}
+	.card-image {
+		margin-top: 3rem;
+	}
+	.card-content {
+		margin-top: 3rem;
+	}
+	.card-action {
+		margin-top: 2rem;
+		.btn,
+		button {
+			display: block;
+			margin: auto;
+		}
+	}
+}
+
+.container-articles {
+	.article-details {
+		border-top: solid 1px;
+		border-bottom: solid 1px;
+		border-color: $color-neutral-2;
+		padding: 1rem;
+	}
+	article:nth-child(odd) {
+		//mettre le  breakpoint d'après map
+		@media screen and (min-width: 1300px) {
+			border-right: solid 1px;
+		}
+	}
 }

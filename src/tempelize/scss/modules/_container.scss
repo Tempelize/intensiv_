@@ -11,12 +11,16 @@
 // .box-stretch-width-0 à 100 (%) => étendue en % de la largeur de la boite dans son container
 // .box-stretch-height-0 à 100 (%) => étendue en % de la hauteur de la boite dans son container (la hauteur de son container doit être fixée)
 
-// .box-width-1 à 500px => largeur d'une boite en pixel (rajouté .box pour avoir bordure et padding)
-// .box-height-1 à 500px => hauteur de la boite en pixel (rajouté .box pour avoir bordure et padding)
+// .box-width-1 à 700px => largeur d'une boite en pixel (rajouté .box-border pour avoir bordure et padding)
+// .box-height-1 à 700px => hauteur de la boite en pixel (rajouté .box-border pour avoir bordure et padding)
+
 // .flex => display: flex et justify content : center par défaut
+// .flex-center => justify-content: center
 // .flex-start => justify-content : start;
 // .flex-between => justify-content : space-between;
 // .flex-wrap => flex-wrap: wrap;
+// .align-center => align-items: center;
+
 // .pre => <pre>
 //-------------------------------------------------------------------------------
 // VARIABLES
@@ -30,7 +34,7 @@ $pre-border-background: $color-neutral-1;
 $pre-border-color: $color-text;
 $pre-border: 1px solid;
 
-$flex-margin-default: 0.2rem;
+$flex-margin-default: 0; // 0.2rem;
 //-------------------------------------------------------------------------------
 // MODULE SPECIFICATIONS
 @use "sass:map";
@@ -123,7 +127,7 @@ $flex-margin-default: 0.2rem;
 // 		height: #{$var}#{$pourcent};
 // 	}
 // }
-@for $var from 1 through 500 {
+@for $var from 1 through 700 {
 	.box-width-#{$var} {
 		width: #{$var}px;
 	}
@@ -134,7 +138,10 @@ $flex-margin-default: 0.2rem;
 
 .flex {
 	display: flex;
-	justify-content: flex-start;
+
+	&.flex-center {
+		justify-content: center;
+	}
 	&.flex-start {
 		justify-content: flex-start;
 	}
@@ -143,6 +150,9 @@ $flex-margin-default: 0.2rem;
 	}
 	&.flex-wrap {
 		flex-wrap: wrap;
+	}
+	&.align-center {
+		align-items: center;
 	}
 	div {
 		margin: $flex-margin-default;

@@ -5,10 +5,10 @@
 //------------------------------------------
 // VARIABLES
 $encadrement-rond-type-epaisseur: double 0.5px;
-$encadrement-rond-distance-interieur: 0.5rem;
+$encadrement-rond-distance-interieur: 1rem;
 //---------------------------------------------
 // MODULE SPECIFICATIONS
-.cercle {
+.circle {
 	border: $encadrement-rond-type-epaisseur;
 	border-radius: 50%;
 	padding: $encadrement-rond-distance-interieur;

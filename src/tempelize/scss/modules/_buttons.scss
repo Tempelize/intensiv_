@@ -11,27 +11,28 @@
 // VARIABLES
 $button-width: 115px;
 $button-height: 30px;
-$button-width-ration: 1.3; // pas 0 de 1.1 à ...
-$button-height-ration: 1.3; // pas 0 de 1.1 à ...
+$button-width-ratio: 1.3; // pas 0 de 1.1 à ...
+$button-height-ratio: 1.3; // pas 0 de 1.1 à ...
 
 $button-background-default: $color-neutral-1;
-$button-background-default-hover: darken($color-neutral-1, 30%);
 $button-color-default: $color-text;
-$button-color-default-hover: lighten($color-text, 80%);
+$button-background-default-hover: $color-neutral-1; //darken($color-neutral-1, 30%);
+$button-color-default-hover: $color-1; //lighten($color-text, 80%);
 
 $button-background-primary: $color-text;
-$button-background-primary-hover: lighten($color-text, 10%);
 $button-color-primary: $color-neutral-1;
-$button-color-primary-hover: darken($color-neutral-1, 10%);
+$button-background-primary-hover: $color-1; //lighten($color-text, 10%);
+$button-color-primary-hover: $color-neutral-1; //darken($color-neutral-1, 10%);
 
 $button-background-disabled: $color-neutral-2;
-$button-background-disabled-hover: $color-neutral-2;
 $button-color-disabled: $color-neutral-1;
+$button-background-disabled-hover: $color-neutral-2;
 $button-color-disabled-hover: $color-neutral-1;
 
-$button-border: none;
-$button-border-radius: 5px;
-$button-margin: 0.2rem 0rem 0.2rem 0rem;
+$button-border: solid 1px $color-text;
+$button-border-hover: solid 1px $color-1;
+$button-border-radius: 0px;
+$button-margin: 0.2rem 0.2rem 0.2rem 0.2rem;
 $button-padding: 0.2rem;
 
 $button-font: $font-2;
@@ -39,8 +40,8 @@ $button-font-size-default: medium;
 $button-font-size-large: large;
 $button-font-size-small: small;
 
-$button-box-shadow: 1px 1px 2px $color-text;
-$button-box-shadow-hover: 0.8px 0.8px 2px $color-text;
+$button-box-shadow: 0; //1px 1px 2px $color-text;
+$button-box-shadow-hover: 0; // 0.8px 0.8px 2px $color-text;
 //-------------------------------------------------------------------------------------------------------------
 // MODULE SPECIFICATIONS
 button,
@@ -64,6 +65,7 @@ button,
 		color: $button-color-default-hover;
 		background: $button-background-default-hover;
 		box-shadow: $button-box-shadow-hover;
+		border: $button-border-hover;
 	}
 
 	// BTN PRIMARY
@@ -76,13 +78,13 @@ button,
 		}
 	}
 	&.large {
-		width: $button-width * $button-width-ration;
-		height: $button-height * $button-height-ration;
+		width: $button-width * $button-width-ratio;
+		height: $button-height * $button-height-ratio;
 		font-size: $button-font-size-large;
 	}
 	&.small {
-		width: $button-width / $button-width-ration;
-		height: $button-height / $button-height-ration;
+		width: $button-width / $button-width-ratio;
+		height: $button-height / $button-height-ratio;
 		font-size: $button-font-size-small;
 	}
 
@@ -100,10 +102,15 @@ button,
 	&.disabled {
 		color: $button-color-disabled;
 		background: $button-background-disabled;
+		border: 0;
 		&:hover {
 			color: $button-color-disabled-hover;
 			background: $button-background-disabled-hover;
+			border: 0;
 		}
+	}
+	&.center {
+		margin: auto;
 	}
 
 	//ICONES

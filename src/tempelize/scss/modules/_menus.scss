@@ -4,6 +4,7 @@
 // .list-style-none => suppression puces
 // .alternate => background différent une ligne sur deux
 // .menu-horizontal => pour placer un ul>li horizontalement
+// .pagination pour obtenir une pagination à l'aide d'un ul>li>a
 //------------------------------------
 // VARIABLES
 $ul-padding-left: 0;
@@ -81,5 +82,38 @@ ol {
 	}
 	li:not(:last-of-type) {
 		margin-right: $menu-horizontal-margin-right;
+	}
+}
+
+// PAGINATION
+.pagination {
+	display: flex;
+	padding-left: 0;
+	justify-content: center;
+	li {
+		list-style: none;
+		a {
+			display: inline-block;
+			padding: 0.5rem 1rem 0.5rem 1rem;
+			border-top: solid 1px;
+			border-bottom: solid 1px;
+			&:hover {
+				border-color: $color-1;
+			}
+		}
+	}
+	li:nth-child(odd) a {
+		border-left: solid 1px;
+		border-right: solid 1px;
+	}
+	// li:nth-child(even) a:hover {
+	// 	border-left: solid 1px;
+	// 	border-right: solid 1px;
+	// }
+	li:first-of-type a {
+		border-left: solid 1px;
+	}
+	li:last-of-type a {
+		border-right: solid 1px;
 	}
 }
