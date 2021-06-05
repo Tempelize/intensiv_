@@ -6,27 +6,31 @@
 // VARIABLES
 $label-margin: 0.2rem 0 0 0.5rem;
 
+$input-width: 100%;
 $input-height: 50px;
 $input-padding: 0;
-$input-width: 90%;
-$input-margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+$input-margin: 0.5rem 0rem 0.5rem 0rem;
 
 $input-radio-margin-left: 150px;
 
 $input-select-width: 100%;
 $input-select-height: 50px;
 $input-select-padding-left: 10px;
+
+$button-border-hover: solid 1px $color-1;
 //-------------------------------------------------------------------------------------------------------------
 // MODULE SPECIFICATIONS
 form {
 	input {
+		&[type="email"],
+		&[type="text"] {
+			height: $input-height;
+			padding: $input-padding;
+			width: $input-width;
+			margin: $input-margin;
+		}
 	}
-	:not([type="radio"], [type="checkbox"], [type="submit"], [type="reset"], label, div) {
-		height: $input-height;
-		padding: $input-padding;
-		width: $input-width;
-		margin: $input-margin;
-	}
+
 	label {
 		margin: $label-margin;
 	}
@@ -41,6 +45,12 @@ form {
 		width: $input-select-width;
 		height: $input-select-height;
 		padding-left: $input-select-padding-left;
+	}
+	textarea {
+		height: $input-height;
+		padding: $input-padding;
+		width: $input-width;
+		margin: $input-margin;
 	}
 	[type="submit"] {
 		width: $button-width;
@@ -59,6 +69,7 @@ form {
 			background: $button-background-primary-hover;
 			color: $button-color-primary-hover;
 			box-shadow: $button-box-shadow-hover;
+			border: $button-border-hover;
 		}
 	}
 	[type="reset"] {
@@ -78,6 +89,7 @@ form {
 			background: $button-background-default-hover;
 			color: $button-color-default-hover;
 			box-shadow: $button-box-shadow-hover;
+			border: $button-border-hover;
 		}
 	}
 }
