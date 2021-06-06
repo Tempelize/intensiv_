@@ -8,22 +8,25 @@
 // il faut l'importer mais on va utiliser une variable pour déclarer la typographie
 // @font-face {
 // 	font-family: "futura"; // famille que l'on va déclarer dans notre projet
-// 	src: url("./../fonts/futura.woff2") format("woff2"), url("./../fonts/futura.woff") format("woff"); // chemin vers notre typo d'abord la plus récente
+// 	src: url("./../../../fonts/futura.woff2") format("woff2"), url("./../../fonts/futura.woff") format("woff"); // chemin vers notre typo d'abord la plus récente
 // 	font-weight: normal;
 // 	font-style: normal;
 // }
-
 // @font-face {
 // 	font-family: "aller"; // famille que l'on va déclarer dans notre projet
-// 	src: url("./../fonts/aller.woff2") format("woff2"), url("./../fonts/aller.woff") format("woff"); // chemin vers notre typo d'abord la plus récente
+// 	src: url("./../../../fonts/aller.woff2") format("woff2"), url("./../../../fonts/aller.woff") format("woff"); // chemin vers notre typo d'abord la plus récente
 // 	font-weight: normal;
 // 	font-style: normal;
 // }
 
-// METHODE 2 PAR APPEL D'UNE POLICE EN LIGNE
+// METHODE 2 PAR CDN APPEL D'UNE POLICE EN LIGNE
 //------------------------------------------
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
+
+// ICONES
+@import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
+
 //----------------------------------------------------------------------
 // CLASS DISPONIBLES
 // .h1,.h2,.h3,.h4,.h5,.h6 => typo comme h1,......
@@ -51,6 +54,9 @@
 // .text-color-text
 // .text-color-neutral-1
 // .text-color-neutral-2
+// .icon-s => taille icone fontawesome = font-size: x px;
+// .icon-l
+// .icon-xl
 
 //----------------------------------------------------------------------
 // VARIABLES
@@ -255,6 +261,11 @@ $q-font-style: italic;
 $q-border-left: solid 2px;
 $q-margin-left: 2rem;
 $q-padding-left: 1rem;
+
+// ICONES
+$icon-s: 10px;
+$icon-l: 25px;
+$icon-xl: 35px;
 
 //-------------------------------------------------------------------------------------------------------------
 // MODULE DEFAULT SPECIFICATIONS
@@ -522,4 +533,14 @@ q {
 }
 .font-2 {
 	font-family: $font-2;
+}
+
+.icon-s {
+	font-size: $icon-s;
+}
+.icon-l {
+	font-size: $icon-l;
+}
+.icon-xl {
+	font-size: $icon-xl;
 }

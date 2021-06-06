@@ -4,8 +4,8 @@
 // .cercle => bordure en cercle autour de l'élément
 //------------------------------------------
 // VARIABLES
-$encadrement-rond-type-epaisseur: double 0.5px;
-$encadrement-rond-distance-interieur: 1rem;
+$encadrement-rond-type-epaisseur: solid 1px;
+$encadrement-rond-distance-interieur: 0.7rem;
 //---------------------------------------------
 // MODULE SPECIFICATIONS
 .circle {
