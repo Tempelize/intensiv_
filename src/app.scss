@@ -42,7 +42,7 @@
 				}
 			}
 			li:not(.is-actif):hover {
-				background: lighten($color-3, 35%);
+				background: lighten($color-1, 35%);
 			}
 		}
 	}
@@ -67,10 +67,10 @@
 	color: $color-text;
 }
 .background-special {
-	background: radial-gradient($color-3 40%, $color-text);
+	background: radial-gradient($color-1 40%, $color-text);
 }
 .background-special-2 {
-	background: linear-gradient($color-3, $color-text 95%);
+	background: linear-gradient($color-1, $color-text 95%);
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

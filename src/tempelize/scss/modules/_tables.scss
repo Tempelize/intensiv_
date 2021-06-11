@@ -16,14 +16,14 @@ $table-entete-border: solid 1px $color-text;
 
 // TITRE DU TABLEAU
 $table-title-align: left;
-$table-title-font: $font-1;
+$table-title-font: $font-text;
 
 // ENTETE TABLEAU
 $table-entete-hauteur: 4rem;
 $table-entete-alignement-horizontal-text: center;
 $table-entete-alignement-vertical-text: middle;
 $table-entete-padding: 15px;
-$table-entete-font: $font-2;
+$table-entete-font: $font-header;
 
 // CELULLES TABLEAU
 $table-celulle-border: solid 1px $color-text;
@@ -33,7 +33,7 @@ $table-celulle-text-align: left;
 $table-celulle-vertical-align: middle;
 $table-celulle-padding: 15px;
 $table-celulle-color: $color-text;
-$table-celulle-font: $font-2;
+$table-celulle-font: $font-header;
 
 // COLONNES TABLEAU <th>
 $table-colonne-background: $color-neutral-1;
@@ -50,7 +50,7 @@ $table-ligne-color-hover: lighten($color-text, 80%);
 $table-colonne-background-hover: darken($color-neutral-1, 30%);
 $table-colonne-color-hover: lighten($color-text, 80%);
 $table-ligne-background-1-2-hover: darken($color-neutral-1, 30%);
-$table-ligne-color-1-2-hover: lighten($color-text, 80%);
+$table-ligne-color-hot-2-hover: lighten($color-text, 80%);
 
 //-------------------------------------------------------------------------------------------------------------
 // MODULE SPECIFICATIONS
@@ -108,7 +108,7 @@ table {
 		}
 		tr:hover {
 			background: $table-ligne-background-1-2-hover;
-			color: $table-ligne-color-1-2-hover;
+			color: $table-ligne-color-hot-2-hover;
 		}
 	}
 }

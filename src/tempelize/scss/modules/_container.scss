@@ -34,7 +34,7 @@ $pre-border-background: $color-neutral-1;
 $pre-border-color: $color-text;
 $pre-border: 1px solid;
 
-$flex-margin-default: 0; // 0.2rem;
+$flex-margin-default: 0.2rem;
 //-------------------------------------------------------------------------------
 // MODULE SPECIFICATIONS
 @use "sass:map";
@@ -98,14 +98,14 @@ $flex-margin-default: 0; // 0.2rem;
 		padding: $box-padding;
 	}
 }
-.border-color-1 {
-	border-color: $color-1;
+.border-color-hot {
+	border-color: $color-hot;
 }
 .border-color-2 {
 	border-color: $color-2;
 }
-.border-color-3 {
-	border-color: $color-3;
+.border-color-1 {
+	border-color: $color-1;
 }
 .border-color-text {
 	border-color: $color-text;

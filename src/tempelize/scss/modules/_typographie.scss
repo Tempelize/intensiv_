@@ -22,7 +22,7 @@
 // METHODE 2 PAR CDN APPEL D'UNE POLICE EN LIGNE
 //------------------------------------------
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Pacifico&family=Roboto+Condensed:wght@300&family=Source+Sans+Pro:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap");
 
 // ICONES
 @import url("https://pro.fontawesome.com/releases/v5.10.0/css/all.css");
@@ -46,11 +46,11 @@
 // .p-1  => typo paragraphe niveau 1
 // .p-2
 // .p-3
-// .font-1 => typo de type font-1
-// .font-2 => typo de type font-2
-// .text-color-1 => couleur texte de la couleur : color 1
+// .font-text => typo de type font-text
+// .font-header => typo de type font-header
+// .text-color-hot => couleur texte de la couleur : color-hot
 // .text-color-2
-// .text-color-3
+// .text-color-1
 // .text-color-text
 // .text-color-neutral-1
 // .text-color-neutral-2
@@ -62,72 +62,201 @@
 // VARIABLES
 // DEFAULT VALUES
 // P
-// $font-1: "aller";
-// $font-2: "futura";
-// $font-1: "Source Sans Pro", sans serif;
-// $font-2: "Open Sans", sans-serif;
-$font-1: "Open Sans", sans serif;
-$font-2: "Source Sans Pro", sans-serif;
+// $font-text: "aller";
+// $font-header: "futura";
+// $font-text: "Source Sans Pro", sans serif;
+// $font-header: "Open Sans", sans-serif;
+$font-header: "Source Sans Pro", sans-serif;
+$font-text: "Merriweather Sans", sans-serif;
 
+// DEFAULT BODY
 $font-color-default: $color-text;
+$font-weight-default: 300;
 $font-size-default: 1.1em;
 $line-height-default: 1.65;
-$font-weight-default: 300;
 
-// HEADERS
+// HEADERS ////////////////////////////////////////////////////
+// DEFAULT HEADERS
+$font-header-default: $font-header;
+$font-header-color-default: $color-text;
+$font-header-weight-default: 900;
+$font-header-letter-spacing-default: 0rem;
+$font-header-margin-default: 0 0 0.7rem 0;
+
 // h1
-$font-h1: $font-1;
-$font-color-h1: $color-text;
+$font-h1: $font-header-default;
+$font-color-h1: $font-header-color-default;
+$font-weight-h1: $font-header-weight-default;
+$letter-spacing-h1: $font-header-letter-spacing-default;
+$margin-h1: $font-header-margin-default;
 $font-size-h1: 2.5rem;
-$font-weight-h1: 500;
-$line-height-h1: 1.2;
-$letter-spacing-h1: 0rem;
-$margin-h1: 0 0 0.7rem 0;
-
+$line-height-h1: 1.5;
 //h2
-$font-h2: $font-1;
-$font-color-h2: $color-text;
+$font-h2: $font-header-default;
+$font-color-h2: $font-header-color-default;
+$font-weight-h2: $font-header-weight-default;
+$letter-spacing-h2: $font-header-letter-spacing-default;
+$margin-h2: $font-header-margin-default;
 $font-size-h2: 1.5rem;
-$font-weight-h2: 500;
 $line-height-h2: 1.5;
-$letter-spacing-h2: 0rem;
-$margin-h2: 0 0 0.7rem 0;
-
 //h3
-$font-h3: $font-1;
-$font-color-h3: $color-text;
+$font-h3: $font-header-default;
+$font-color-h3: $font-header-color-default;
+$font-weight-h3: $font-header-weight-default;
+$letter-spacing-h3: $font-header-letter-spacing-default;
+$margin-h3: $font-header-margin-default;
 $font-size-h3: 1.25rem;
-$font-weight-h3: 500;
 $line-height-h3: 1.5;
-$letter-spacing-h3: 0rem;
-$margin-h3: 0 0 0.7rem 0;
-
 //h4
-$font-h4: $font-1;
-$font-color-h4: $color-text;
+$font-h4: $font-header-default;
+$font-color-h4: $font-header-color-default;
+$font-weight-h4: $font-header-weight-default;
+$letter-spacing-h4: $font-header-letter-spacing-default;
+$margin-h4: $font-header-margin-default;
 $font-size-h4: 1.1rem;
-$font-weight-h4: 500;
 $line-height-h4: 1.2;
-$letter-spacing-h4: 0rem;
-$margin-h4: 0 0 0.7rem 0;
-
 //h5
-$font-h5: $font-1;
-$font-color-h5: $color-text;
+$font-h5: $font-header-default;
+$font-color-h5: $font-header-color-default;
+$font-weight-h5: $font-header-weight-default;
+$letter-spacing-h5: $font-header-letter-spacing-default;
+$margin-h5: $font-header-margin-default;
 $font-size-h5: 1rem;
-$font-weight-h5: 500;
 $line-height-h5: 1.2;
-$letter-spacing-h5: 0rem;
-$margin-h5: 0 0 0.7rem 0;
-
 //h6
-$font-h6: $font-1;
-$font-color-h6: $color-text;
+$font-h6: $font-header-default;
+$font-color-h6: $font-header-color-default;
+$font-weight-h6: $font-header-weight-default;
+$letter-spacing-h6: $font-header-letter-spacing-default;
+$margin-h6: $font-header-margin-default;
 $font-size-h6: 0.9rem;
-$font-weight-h6: 500;
 $line-height-h6: 1.2;
-$letter-spacing-h6: 0rem;
-$margin-h6: 0 0 0.7rem 0;
+///////////////////////////////////////////////////////////////////////////////////////
+//
+// TITRES - SOUS-TITRES - PARAGRAPHES
+// VARIABLES TITRES DEFAULT
+$font-title-font-default: $font-text;
+$font-title-color-default: $color-text;
+$font-title-weight-default: 500;
+$font-title-letter-spacing-default: 0rem;
+$font-title-margin-default: 0 0 0.7rem 0;
+$font-title-line-height-default: 1.65;
+$font-title-style-default: normal;
+$font-title-text-decoration-default: none;
+// VARIABLES TITRE-1
+$title-1-font-size: 1.35rem;
+
+$title-1-font: $font-title-font-default;
+$title-1-color: $font-title-color-default;
+$title-1-font-weight: $font-title-weight-default;
+$title-1-letter-spacing: $font-title-letter-spacing-default;
+$title-1-margin: $font-title-margin-default;
+$title-1-line-height: $font-title-line-height-default;
+$title-1-style: $font-title-style-default;
+$title-1-text-decoration: $font-title-text-decoration-default;
+// VARIABLES TITRE-2
+$title-2-font-size: 1.25rem;
+
+$title-2-font: $font-title-font-default;
+$title-2-color: $font-title-color-default;
+$title-2-font-weight: $font-title-weight-default;
+$title-2-letter-spacing: $font-title-letter-spacing-default;
+$title-2-margin: $font-title-margin-default;
+$title-2-line-height: $font-title-line-height-default;
+$title-2-style: $font-title-style-default;
+$title-2-text-decoration: $font-title-text-decoration-default;
+// VARIABLES TITRE-3
+$title-3-font-size: 1.19rem;
+
+$title-3-font: $font-title-font-default;
+$title-3-color: $font-title-color-default;
+$title-3-font-weight: $font-title-weight-default;
+$title-3-letter-spacing: $font-title-letter-spacing-default;
+$title-3-margin: $font-title-margin-default;
+$title-3-line-height: $font-title-line-height-default;
+$title-3-style: $font-title-style-default;
+$title-3-text-decoration: $font-title-text-decoration-default;
+// VARIABLES SOUS TITRES DEFAULT
+$font-sub-title-font-default: $font-text;
+$font-sub-title-color-default: $color-text;
+$font-sub-title-weight-default: 300;
+$font-sub-title-letter-spacing-default: 0rem;
+$font-sub-title-margin-default: 0 0 0.7rem 0;
+$font-sub-title-line-height-default: 1.65;
+$font-sub-title-style-default: italic;
+$font-sub-title-text-decoration-default: none;
+// VARIABLES SOUS TITRES 1
+$sub-title-1-font-size: 1.4rem;
+
+$sub-title-1-font: $font-sub-title-font-default;
+$sub-title-1-color: $font-sub-title-color-default;
+$sub-title-1-font-weight: $font-sub-title-weight-default;
+$sub-title-1-line-height: $font-sub-title-line-height-default;
+$sub-title-1-letter-spacing: $font-sub-title-letter-spacing-default;
+$sub-title-1-margin: $font-sub-title-margin-default;
+$sub-title-1-style: $font-sub-title-style-default;
+$sub-title-1-text-decoration: $font-sub-title-text-decoration-default;
+// VARIABLES SOUS TITRES 2
+$sub-title-2-font-size: 1.15rem;
+
+$sub-title-2-font: $font-sub-title-font-default;
+$sub-title-2-color: $font-sub-title-color-default;
+$sub-title-2-font-weight: $font-sub-title-weight-default;
+$sub-title-2-line-height: $font-sub-title-line-height-default;
+$sub-title-2-letter-spacing: $font-sub-title-letter-spacing-default;
+$sub-title-2-margin: $font-sub-title-margin-default;
+$sub-title-2-style: $font-sub-title-style-default;
+$sub-title-2-text-decoration: $font-sub-title-text-decoration-default;
+// VARIABLES SOUS TITRES 3
+$sub-title-3-font-size: 1rem;
+
+$sub-title-3-font: $font-sub-title-font-default;
+$sub-title-3-color: $font-sub-title-color-default;
+$sub-title-3-font-weight: $font-sub-title-weight-default;
+$sub-title-3-line-height: $font-sub-title-line-height-default;
+$sub-title-3-letter-spacing: $font-sub-title-letter-spacing-default;
+$sub-title-3-margin: $font-sub-title-margin-default;
+$sub-title-3-style: $font-sub-title-style-default;
+$sub-title-3-text-decoration: $font-sub-title-text-decoration-default;
+// VARIABLES PARAGRAPHE DEFAULT
+$font-p-font-default: $font-text;
+$font-p-color-default: $color-text;
+$font-p-weight-default: 300;
+$font-p-letter-spacing-default: 0rem;
+$font-p-margin-default: 0 0 0.7rem 0;
+$font-p-line-height-default: 1.65;
+$font-p-style-default: normal;
+$font-p-text-decoration-default: none;
+// VARIABLES P-1
+$p-1-font-size: 1.2rem;
+
+$p-1-font: $font-p-font-default;
+$p-1-color: $font-p-color-default;
+$p-1-font-weight: $font-p-weight-default;
+$p-1-line-height: $font-p-line-height-default;
+$p-1-letter-spacing: $font-p-letter-spacing-default;
+$p-1-margin: $font-p-margin-default;
+$p-1-style: $font-p-style-default;
+// VARIABLES P-2
+$p-2-font-size: 1rem;
+
+$p-2-font: $font-p-font-default;
+$p-2-color: $font-p-color-default;
+$p-2-font-weight: $font-p-weight-default;
+$p-2-line-height: $font-p-line-height-default;
+$p-2-letter-spacing: $font-p-letter-spacing-default;
+$p-2-margin: $font-p-margin-default;
+$p-2-style: $font-p-style-default;
+// VARIABLES P-3
+$p-3-font-size: 0.9rem;
+
+$p-3-font: $font-p-font-default;
+$p-3-color: $font-p-color-default;
+$p-3-font-weight: $font-p-weight-default;
+$p-3-line-height: $font-p-line-height-default;
+$p-3-letter-spacing: $font-p-letter-spacing-default;
+$p-3-margin: $font-p-margin-default;
+$p-3-style: $font-p-style-default;
 
 //CODE
 $code-color: $color-neutral-2;
@@ -157,98 +286,10 @@ $underlined-style: solid 1px;
 
 //LINKS
 $link-color: $color-text;
-$link-color-hover: $color-1; //lighten($link-color, 35%);
+$link-color-hover: $color-hot; //lighten($link-color, 35%);
 $link-decoration: none;
 $link-hover-decoration: none;
 $link-background: none;
-
-// TITRES - SOUS-TITRES - PARAGRAPHES
-$title-1-font: $font-1;
-$title-1-color: $color-text;
-$title-1-font-size: 1.8rem;
-$title-1-font-weight: $font-weight-default;
-$title-1-line-height: $line-height-default;
-$title-1-letter-spacing: 0rem; //-0.25rem;
-$title-1-margin: 0 0 0.7rem 0;
-$title-1-style: normal;
-$title-1-text-decoration: none;
-
-$title-2-font: $font-1;
-$title-2-color: $color-text;
-$title-2-font-size: 1.25rem;
-$title-2-font-weight: $font-weight-default;
-$title-2-line-height: $line-height-default;
-$title-2-letter-spacing: 0rem;
-$title-2-margin: 0 0 0.7rem 0;
-$title-2-style: normal;
-$title-2-text-decoration: none;
-
-$title-3-font: $font-1;
-$title-3-color: $color-text;
-$title-3-font-size: 1.19rem;
-$title-3-font-weight: $font-weight-default;
-$title-3-line-height: $line-height-default;
-$title-3-letter-spacing: 0rem;
-$title-3-margin: 0 0 0.7rem 0;
-$title-3-style: normal;
-$title-3-text-decoration: none;
-
-$sub-title-1-font: $font-2;
-$sub-title-1-color: $color-text;
-$sub-title-1-font-size: 1.4rem;
-$sub-title-1-font-weight: $font-weight-default;
-$sub-title-1-line-height: $line-height-default;
-$sub-title-1-letter-spacing: 0rem;
-$sub-title-1-margin: 0 0 0.7rem 0;
-$sub-title-1-style: italic;
-$sub-title-1-text-decoration: none;
-
-$sub-title-2-font: $font-2;
-$sub-title-2-color: $color-text;
-$sub-title-2-font-size: 1.15rem;
-$sub-title-2-font-weight: $font-weight-default;
-$sub-title-2-line-height: $line-height-default;
-$sub-title-2-letter-spacing: 0rem;
-$sub-title-2-margin: 0 0 0.7rem 0;
-$sub-title-2-style: italic;
-$sub-title-2-text-decoration: none;
-
-$sub-title-3-font: $font-2;
-$sub-title-3-color: $color-text;
-$sub-title-3-font-size: 1rem;
-$sub-title-3-font-weight: $font-weight-default;
-$sub-title-3-line-height: $line-height-default;
-$sub-title-3-letter-spacing: 0rem;
-$sub-title-3-margin: 0 0 0.7rem 0;
-$sub-title-3-style: italic;
-$sub-title-3-text-decoration: none;
-
-$p-1-font: $font-2;
-$p-1-color: $color-text;
-$p-1-font-size: 1.2rem;
-$p-1-font-weight: $font-weight-default;
-$p-1-line-height: $line-height-default;
-$p-1-letter-spacing: 0rem;
-$p-1-margin: 0 0 0.7rem 0;
-$p-1-style: normal;
-
-$p-2-font: $font-2;
-$p-2-color: $color-text;
-$p-2-font-size: 1rem;
-$p-2-font-weight: $font-weight-default;
-$p-2-line-height: $line-height-default;
-$p-2-letter-spacing: 0rem;
-$p-2-margin: 0 0 0.7rem 0;
-$p-2-style: normal;
-
-$p-3-font: $font-2;
-$p-3-color: $color-text;
-$p-3-font-size: 0.9rem;
-$p-3-font-weight: $font-weight-default;
-$p-3-line-height: $line-height-default;
-$p-3-letter-spacing: 0rem;
-$p-3-margin: 0 0 0.7rem 0;
-$p-3-style: normal;
 
 // BLOQUEQUOTE
 //L'élément <blockquote> (qui signifie bloc de citation) indique que le texte contenu dans l'élément est une citation longue.
@@ -256,7 +297,7 @@ $p-3-style: normal;
 //Une URL indiquant la source de la citation peut être donnée grâce à l'attribut cite
 //tandis qu'un texte représentant la source peut être donné via l'élément <cite>.
 $q-color: $color-text;
-$q-font: $font-2;
+$q-font: $font-header;
 $q-font-style: italic;
 $q-border-left: solid 2px;
 $q-margin-left: 2rem;
@@ -271,27 +312,12 @@ $icon-xl: 35px;
 // MODULE DEFAULT SPECIFICATIONS
 //-------------------------------------------------------------------------------------------------------------
 body {
-	font-family: $font-1;
+	font-family: $font-text;
 	font-size: $font-size-default;
 	color: $font-color-default;
 	line-height: $line-height-default;
 	font-weight: $font-weight-default;
 }
-// A MODIFIER ERREUR
-
-// DEFAULT HEADERS
-// @for $i from 1 through 6 {
-// 	h#{$i},
-// 	.h#{$i} {
-// 		font-family: $font-h#{$i};
-// 		font-size: $font-size-h#{$i};
-// 		font-weight: $font-weight-h#{$i};
-// 		color: $font-color-h#{$i};
-// 		line-height: $line-height-h#{$i};
-// 		margin: $margin-h#{$i};
-// 		letter-spacing: $letter-spacing-h#{$i};
-// 	}
-// }
 
 // HEADERS
 h1,
@@ -399,6 +425,7 @@ a,
 	}
 }
 // TITRES - SOUS-TITRES - PARAGRAPHES
+
 .title-1 {
 	font-family: $title-1-font;
 	color: $title-1-color;
@@ -507,14 +534,14 @@ q {
 }
 
 // COULEURS TYPO
-.text-color-1 {
-	color: $color-1;
+.text-color-hot {
+	color: $color-hot;
 }
 .text-color-2 {
 	color: $color-2;
 }
-.text-color-3 {
-	color: $color-3;
+.text-color-1 {
+	color: $color-1;
 }
 .text-color-text {
 	color: $color-text;
@@ -528,11 +555,11 @@ q {
 
 // HELPERS TYPO
 
-.font-1 {
-	font-family: $font-1;
+.font-text {
+	font-family: $font-text;
 }
-.font-2 {
-	font-family: $font-2;
+.font-header {
+	font-family: $font-header;
 }
 
 .icon-s {

@@ -1,9 +1,9 @@
 // RECHERCHE POLICE 1 ET POLICE 2
-const police1=window.getComputedStyle(document.getElementById('police-font-1')).fontFamily;
-const police2=window.getComputedStyle(document.getElementById('police-font-2')).fontFamily;
+const police1 = window.getComputedStyle(document.getElementById("police-font-text")).fontFamily;
+const police2 = window.getComputedStyle(document.getElementById("police-font-header")).fontFamily;
 
-// MODIFICATION DU TEXTE 
-document.getElementById('police-font-1').innerText=police1;
-document.getElementById('police-font-2').innerText=police2;
+// MODIFICATION DU TEXTE
+document.getElementById("police-font-text").innerText = police1;
+document.getElementById("police-font-header").innerText = police2;
 
-// RAJOUTER POUR LE HEADER
+

@@ -1,33 +1,32 @@
 // COULEURS
 //---------------------------------------------------------
 // CLASS DISPONIBLES
-// .background-color-1 => background de la couleur: color 1
+// .background-color-1 => background de la couleur: $color-1
 // .background-color-2
-// .background-color-3
+// .background-color-hot => background de la couleur: $color-hot
 // .background-color-text => background de la même couleur que la couleur de texte
 // .background-color-neutral-1
 // .background-color-neutral-2
 
 //--------------------------------------------------------
 // VARIABLES
-$color-1: #18bfef;
+$color-1: #4e403d;
 $color-2: #d8189e;
-$color-3: #4e403d;
+$color-hot: #18bfef;
 $color-text: #212931;
 $color-neutral-1: #f6f6f6;
 $color-neutral-2: #717981;
 
 //---------------------------------------------------------
 // MODULE SPECIFICATIONS
-
 .background-color-1 {
 	background: $color-1;
 }
 .background-color-2 {
 	background: $color-2;
 }
-.background-color-3 {
-	background: $color-3;
+.background-color-hot {
+	background: $color-hot;
 }
 .background-color-text {
 	background: $color-text;

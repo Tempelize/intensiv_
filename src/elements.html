@@ -46,7 +46,7 @@
 							<div class="flex flex-wrap">
 								<div
 									class="background-color-1 text-color-neutral-1 text-center box-width-150 box-height-150"
-									style="line-height: 150px; vertical-align: middle"
+									style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
 								>
 									[.color-1]
 								</div>
@@ -57,11 +57,12 @@
 									[.color-2]
 								</div>
 								<div
-									class="background-color-3 text-color-neutral-1 text-center box-width-150 box-height-150"
-									style="width: 150px; height: 150px; line-height: 150px; vertical-align: middle"
+									class="background-color-hot text-color-neutral-1 text-center box-width-150 box-height-150"
+									style="line-height: 150px; vertical-align: middle"
 								>
-									[.color-3]
+									[.color-hot]
 								</div>
+
 								<div
 									class="background-color-text text-color-neutral-1 text-center box-width-150 box-height-150"
 									style="line-height: 150px; vertical-align: middle"
@@ -85,16 +86,14 @@
 						<div class="line-separator"></div>
 						<!-- SECTION POLICE TEXTE -->
 						<section>
-							<h3 class="h2 font-1">
-								TITRE POLICE 1 [.font-1]
-								<span id="police-font-1">-"A CHANGER !!!! MERRIWEATHER", GEORGIA, SERIF | #212931 </span>
+							<h3 class="h2 font-text">
+								TEXT [.font-text]
+								<span id="police-font-text"></span>
 							</h3>
-							<p class="font-1">TEXTE POLICE 1 [font-1] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
-							<h3 class="h2 font-2">
-								TITRE POLICE 2 [.font-2]
-								<span id="police-font-2">-"MERRIWEATHER", GEORGIA, SERIF | #212931</span>
-							</h3>
-							<p class="font-2">TEXTE POLICE 2 [.font-2] : Lorem, ipsum dolor sit amet consectetur adipisicing elit. LIBERO IURE OFFICIA 123456#&é""'é!</p>
+							<!-- <h3 class="h2 font-header">
+								POLICE 2 [.font-header]
+								<span id="police-font-header"></span>
+							</h3> -->
 							<p>
 								This is <mark class="mark">mark</mark> and this is <strong class="strong">strong</strong>. This is <span class="italic">[italic]</span> This is
 								<sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <span class="underlined">[underlined]</span> and this is code:
@@ -104,7 +103,7 @@
 						<div class="line-separator"></div>
 						<!-- SECTION HEADERS -->
 						<section>
-							<h3 class="h3">HEADERS <span id="police-headers">-"SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931</span></h3>
+							<h3 class="h3">HEADERS [.font-header]<span id="police-font-header">-"SOURCE SANS PRO", HELVETICA, SANS-SERIF | #212931</span></h3>
 							<h4 class="h1">HEADING LEVEL 1 [.h1]</h4>
 							<h4 class="h2">HEADING LEVEL 2 [.h2]</h4>
 							<h4 class="h3">HEADING LEVEL 3 [.h3]</h4>
@@ -333,36 +332,36 @@
 						<section>
 							<h3 class="h3">BUTTONS</h3>
 							<div>
-								<button class="primary">[PRIMARY]</button>
+								<button class="primary">[.PRIMARY]</button>
 								<button>DEFAULT</button>
 							</div>
 							<div>
-								<button class="primary large">[LARGE]</button>
+								<button class="primary large">[.LARGE]</button>
 								<button class="">DEFAULT</button>
 								<button class="small">[SMALL]</button>
 							</div>
 							<div class="grid">
 								<div class="m-col-6">
-									<button class="primary stretch small">[STRETCH]+[SMALL]</button>
+									<button class="primary stretch small">[.PRIMARY]+[.STRETCH]+[.SMALL]</button>
 								</div>
 								<div class="m-col-6">
-									<button class="stretch small">[STRETCH]+[SMALL]</button>
-								</div>
-							</div>
-							<div class="grid">
-								<div class="m-col-6">
-									<button class="primary stretch">[STRETCH]</button>
-								</div>
-								<div class="m-col-6">
-									<button class="stretch">[STRETCH]</button>
+									<button class="stretch small">[.STRETCH]+[.SMALL]</button>
 								</div>
 							</div>
 							<div class="grid">
 								<div class="m-col-6">
-									<button class="primary stretch large">[STRETCH]+[LARGE]</button>
+									<button class="primary stretch">[.PRIMARY]+[.STRETCH]</button>
 								</div>
 								<div class="m-col-6">
-									<button class="stretch large">[STRETCH]+[LARGE]</button>
+									<button class="stretch">[.STRETCH]</button>
+								</div>
+							</div>
+							<div class="grid">
+								<div class="m-col-6">
+									<button class="primary stretch large">[.STRETCH]+[.LARGE]</button>
+								</div>
+								<div class="m-col-6">
+									<button class="stretch large">[.PRIMARY]+[.STRETCH]+[.LARGE]</button>
 								</div>
 							</div>
 							<div>
@@ -370,8 +369,8 @@
 								<button><i class="fas fa-download"></i>ICON</button>
 							</div>
 							<div>
-								<button class="primary disabled">[PRIMARY]</button>
-								<button class="disabled">DEFAULT</button>
+								<button class="primary disabled auto">[.PRIMARY]+[.DISABLED]+[.AUTO]</button>
+								<button class="disabled auto">DEFAULT [.DISABLED]</button>
 							</div>
 						</section>
 						<div class="line-separator"></div>
@@ -484,7 +483,7 @@
 						<!-- BOX  -->
 						<section>
 							<h3 class="h3">BOX</h3>
-							<div class="box-border-1 color-3">
+							<div class="box-border-1">
 								<!-- box-stretch-width-100 box-stretch-height-100"> -->
 								<p>
 									Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus magni animi necessitatibus sed dolore odio illum temporibus ratione?
