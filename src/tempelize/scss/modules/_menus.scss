@@ -16,9 +16,14 @@ $ol-margin: 1rem;
 $ol-li-list-style: lower-alpha;
 
 $li-color-alternate: $color-2;
-$li-color-alternate-hover: lighten($li-color-alternate, 20%);
+$li-color-alternate-hover: $color-hot; //lighten($li-color-alternate, 20%);
 
 $menu-horizontal-margin-right: 1rem;
+
+$dt-margin-left: 0px;
+$dd-margin-left: 25px;
+$dt-color: color-text; //$color-1;
+$dd-color: color-text; //$color-hot;
 //--------------------------------------
 // MODULE SPECIFICATIONS
 ul {
@@ -84,7 +89,7 @@ ol {
 		margin-right: $menu-horizontal-margin-right;
 	}
 }
-
+//////////// &&&&&&&&&& A TERMINER
 // PAGINATION
 .pagination {
 	display: flex;
@@ -92,29 +97,44 @@ ol {
 	justify-content: center;
 	li {
 		list-style: none;
+		border-top: solid 1px;
+		border-bottom: solid 1px;
 		a {
 			display: inline-block;
 			padding: 0.5rem 1rem 0.5rem 1rem;
-			border-top: solid 1px;
-			border-bottom: solid 1px;
+		}
+		&.active a {
+			color: $color-hot;
+		}
+		&:hover {
+			// A MODIFIER
+			// border-color: $color-hot;
+		}
+		&:nth-child(odd) {
+			border-left: solid 1px;
+			border-right: solid 1px;
 			&:hover {
-				border-color: $color-hot;
-				// border: solid 2px;
 			}
 		}
+		&:first-of-type {
+			border-left: solid 1px;
+			&:hover {
+				// border-right: 1px;
+			}
+		}
+		&:last-of-type {
+			border-right: solid 1px;
+		}
 	}
-	li:nth-child(odd) a {
-		border-left: solid 1px;
-		border-right: solid 1px;
+}
+
+dl {
+	dt {
+		margin-left: $dt-margin-left;
+		color: $dt-color;
 	}
-	// li:nth-child(even) a:hover {
-	// 	border-left: solid 1px;
-	// 	border-right: solid 1px;
-	// }
-	li:first-of-type a {
-		border-left: solid 1px;
-	}
-	li:last-of-type a {
-		border-right: solid 1px;
+	dd {
+		margin-left: $dd-margin-left;
+		color: $dd-color;
 	}
 }

@@ -36,6 +36,8 @@
 // .italic => en italic
 // .underlined => soulignement
 // .link => <a></a> liens
+// .disabled => liens sans effet hover
+// .active => liens avec effet hover fixe
 // // TITRES - SOUS-TITRES - PARAGRAPHES
 // .title-1 => typo titre niveau 1
 // .title-2
@@ -89,7 +91,7 @@ $font-color-h1: $font-header-color-default;
 $font-weight-h1: $font-header-weight-default;
 $letter-spacing-h1: $font-header-letter-spacing-default;
 $margin-h1: $font-header-margin-default;
-$font-size-h1: 2.5rem;
+$font-size-h1: 3rem;
 $line-height-h1: 1.5;
 //h2
 $font-h2: $font-header-default;
@@ -97,7 +99,7 @@ $font-color-h2: $font-header-color-default;
 $font-weight-h2: $font-header-weight-default;
 $letter-spacing-h2: $font-header-letter-spacing-default;
 $margin-h2: $font-header-margin-default;
-$font-size-h2: 1.5rem;
+$font-size-h2: 2.5rem;
 $line-height-h2: 1.5;
 //h3
 $font-h3: $font-header-default;
@@ -105,7 +107,7 @@ $font-color-h3: $font-header-color-default;
 $font-weight-h3: $font-header-weight-default;
 $letter-spacing-h3: $font-header-letter-spacing-default;
 $margin-h3: $font-header-margin-default;
-$font-size-h3: 1.25rem;
+$font-size-h3: 2rem;
 $line-height-h3: 1.5;
 //h4
 $font-h4: $font-header-default;
@@ -113,7 +115,7 @@ $font-color-h4: $font-header-color-default;
 $font-weight-h4: $font-header-weight-default;
 $letter-spacing-h4: $font-header-letter-spacing-default;
 $margin-h4: $font-header-margin-default;
-$font-size-h4: 1.1rem;
+$font-size-h4: 1.7rem;
 $line-height-h4: 1.2;
 //h5
 $font-h5: $font-header-default;
@@ -121,7 +123,7 @@ $font-color-h5: $font-header-color-default;
 $font-weight-h5: $font-header-weight-default;
 $letter-spacing-h5: $font-header-letter-spacing-default;
 $margin-h5: $font-header-margin-default;
-$font-size-h5: 1rem;
+$font-size-h5: 1.5rem;
 $line-height-h5: 1.2;
 //h6
 $font-h6: $font-header-default;
@@ -129,7 +131,7 @@ $font-color-h6: $font-header-color-default;
 $font-weight-h6: $font-header-weight-default;
 $letter-spacing-h6: $font-header-letter-spacing-default;
 $margin-h6: $font-header-margin-default;
-$font-size-h6: 0.9rem;
+$font-size-h6: 1.3rem;
 $line-height-h6: 1.2;
 ///////////////////////////////////////////////////////////////////////////////////////
 //
@@ -416,7 +418,8 @@ a,
 .link {
 	color: $link-color;
 	text-decoration: $link-decoration;
-	&:hover {
+	&:hover:not(.disabled),
+	&.active {
 		color: $link-color-hover;
 		text-decoration: $link-hover-decoration;
 		i {

@@ -40,17 +40,14 @@ $table-colonne-background: $color-neutral-1;
 
 // LIGNES TABLEAU <tr>
 $table-ligne-background: $color-neutral-1;
-// 1 LIGNE SUR 2 TABLEAU
-$table-ligne-background-1-2: darken($color-neutral-1, 20%);
-
+// 1 LIGNE SUR 2 TABLEAU (.ALTERNATE)
+$table-ligne-background-alternate: darken($color-neutral-1, 20%);
+$table-ligne-color-alternate: $color-text;
 // HOVER
-// SOIT HOVER SUR LES LIGNES OU MISE EN EVIDENCE UNE LIGNE SUR DEUX
-$table-ligne-background-hover: darken($color-neutral-1, 30%);
-$table-ligne-color-hover: lighten($color-text, 80%);
-$table-colonne-background-hover: darken($color-neutral-1, 30%);
-$table-colonne-color-hover: lighten($color-text, 80%);
-$table-ligne-background-1-2-hover: darken($color-neutral-1, 30%);
-$table-ligne-color-hot-2-hover: lighten($color-text, 80%);
+$table-ligne-background-hover: $color-hot; //darken($color-neutral-1, 30%);
+$table-ligne-background-alternate-hover: $color-hot; //darken($color-neutral-1, 30%);
+$table-ligne-color-hover: $color-neutral-1; //lighten($color-text, 80%);
+$table-ligne-color-alternate-hover: $color-neutral-1;
 
 //-------------------------------------------------------------------------------------------------------------
 // MODULE SPECIFICATIONS
@@ -72,43 +69,39 @@ table {
 		vertical-align: $table-entete-alignement-vertical-text;
 		padding: $table-entete-padding;
 		font-family: $table-entete-font;
-		&:hover {
-			// background-color: aqua;
-			// color: white;
-		}
 	}
 
 	td {
 		border: $table-celulle-border;
-		// border-bottom: $table-celulle-border-bottom;
 		height: $table-celulle-height;
 		text-align: $table-celulle-text-align;
 		vertical-align: $table-celulle-vertical-align;
 		padding: $table-celulle-padding;
 		font-family: $table-celulle-font;
 		color: $table-celulle-color;
-		&td:hover {
-			// background: $table-colonne-background-hover;
-			// color: $table-colonne-color-hover;
-		}
 	}
 
-	// HOVER
-	// SOIT HOVER SUR LES LIGNES OU  SUR LES COLONNES MAIS PAS LES DEUX MISE EN EVIDENCE UNE LIGNE SUR DEUX
 	tr {
 		background-color: $table-ligne-background;
 		&:hover {
-			color: $table-ligne-color-hover;
 			background: $table-ligne-background-hover;
+			> * {
+				color: $table-ligne-color-hover;
+			}
 		}
 	}
 	&.alternate {
 		tr:nth-child(even) {
-			background-color: $table-ligne-background-1-2;
+			background-color: $table-ligne-background-alternate;
+			> * {
+				color: $table-ligne-color-alternate;
+			}
 		}
 		tr:hover {
-			background: $table-ligne-background-1-2-hover;
-			color: $table-ligne-color-hot-2-hover;
+			background: $table-ligne-background-alternate-hover;
+			> * {
+				color: $table-ligne-color-alternate-hover;
+			}
 		}
 	}
 }

@@ -6,6 +6,7 @@
 //--------------------------------------------------------------
 // CLASS DISPONIBLES
 // .grid => placement en grid
+// .grid-gap-y-x => gap de la grid en px de 0 à 25px y=écart entre ligne et x=écart entre colonne
 // .xs-col-12 => 12 colonnes pour écran de taille xs (voir _init.scss)
 // .s-col-8 => 8 colonnes pour écran de taille s ......
 // .m-row-2 => 2 lignes pour écran de taille m ......
@@ -13,21 +14,29 @@
 // .xl-offset-4-span-0 => décalge de 4 colonnes et prend une colonne
 //------------------------------------------------------------
 // VARIABLES
-$gap-grid: 0; //0.5rem 0.5rem;
-// NOMBRE DE COLONNES ?
+
 //-------------------------------------------------------------
 // MODULE SPECIFICATIONS
+
+// LA GRID
 .grid {
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	gap: $gap-grid;
+	// gap: $gap-grid;
 	> * {
 		grid-column: span 12;
 		grid-row: span 1;
 		// border: 1px solid gray;
 	}
 }
-
+// GAP DE LA GRID
+@for $i from 0 through 25 {
+	@for $y from 0 through 25 {
+		.grid-gap-#{$i}-#{$y} {
+			gap: #{$i}px #{$y}px;
+		}
+	}
+}
 // screen-sizes = tableau contenant une variable et un tableau (map)
 // $label = (xs,s,m,l,xl)
 // $values = ("breakpoint","container-size")

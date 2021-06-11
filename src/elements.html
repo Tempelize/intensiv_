@@ -90,10 +90,6 @@
 								TEXT [.font-text]
 								<span id="police-font-text"></span>
 							</h3>
-							<!-- <h3 class="h2 font-header">
-								POLICE 2 [.font-header]
-								<span id="police-font-header"></span>
-							</h3> -->
 							<p>
 								This is <mark class="mark">mark</mark> and this is <strong class="strong">strong</strong>. This is <span class="italic">[italic]</span> This is
 								<sup>superscript</sup> text and this is <sub>subscript</sub> text. This is <span class="underlined">[underlined]</span> and this is code:
@@ -207,23 +203,24 @@
 								</ul>
 							</div>
 							<div>
-								<h4>DEFINITION COMPREND PAS LE PRINCIPE ICI DEMANDER INFOS</h4>
-								<h5>Item 1</h5>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus necessitatibus at perspiciatis minima molestias earum velit!
-									A, similique numquam delectus, maxime, id dolores ad vel ex dolore cum tempore?
-								</p>
-								<h5>Item 2</h5>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus necessitatibus at perspiciatis minima molestias earum velit!
-									A, similique numquam delectus, maxime, id dolores ad vel ex dolore cum tempore?
-								</p>
-								<h5>Item 3</h5>
-								<p>
-									Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae repellendus necessitatibus at perspiciatis minima molestias earum velit!
-									A, similique numquam delectus, maxime, id dolores ad vel ex dolore cum tempore?
-								</p>
-							</div>
+								<h4>DEFINITION</h4>
+								<dl>
+									<dt>Item 1</dt>
+									<dd>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nobis odit, ea magnam temporibus, soluta aspernatur qui reiciendis molestias
+										unde minima laborum dignissimos tempora possimus natus accusamus fuga dolorum odio!
+									</dd>
+									<dt>Item 2</dt>
+									<dd>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nobis odit, ea magnam temporibus, soluta aspernatur qui reiciendis molestias
+										unde minima laborum dignissimos tempora possimus natus accusamus fuga dolorum odio!
+									</dd>
+									<dt>Item 3</dt>
+									<dd>
+										Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, nobis odit, ea magnam temporibus, soluta aspernatur qui reiciendis molestias
+										unde minima laborum dignissimos tempora possimus natus accusamus fuga dolorum odio!
+									</dd>
+								</dl>
 						</section>
 						<div class="line-separator"></div>
 						<!-- BLOQUECOTE -->
@@ -370,7 +367,7 @@
 							</div>
 							<div>
 								<button class="primary disabled auto">[.PRIMARY]+[.DISABLED]+[.AUTO]</button>
-								<button class="disabled auto">DEFAULT [.DISABLED]</button>
+								<button class="disabled auto">DEFAULT [.DISABLED]+[.AUTO]</button>
 							</div>
 						</section>
 						<div class="line-separator"></div>
@@ -418,7 +415,7 @@
 							<h4 class="h4">STRETCH</h4>
 							<div><img class="stretch" src="https://picsum.photos/400/150" alt="image_stretch" /></div>
 							<h4 class="h4">GALLERY</h4>
-							<div class="thumbnails largeur-img-300 hauteur-img-300">
+							<div class="thumbnails">
 								<img class="zoom" src="https://picsum.photos/200/200" alt="image" />
 								<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
 								<img class="zoom" src="https://picsum.photos/400/400" alt="image" />
@@ -535,8 +532,7 @@
 									<textarea name="message" id="message-2" cols="30" rows="40"> </textarea>
 								</div>
 								<div>
-									<input type="submit" />
-									<input type="reset" />
+									<input class="reset" type="submit" />
 								</div>
 							</form>
 						</div>

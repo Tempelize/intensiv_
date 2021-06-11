@@ -2,13 +2,15 @@
 //-----------------------------------------------------
 // CLASS DISPONIBLES
 // .input-radio => pour boutons radio
+// .reset => pour input style reset
+// .submit => pour input style submit
 //-----------------------------------------------------
 // VARIABLES
 $label-margin: 0.2rem 0 0 0.5rem;
 
 $input-width: 100%;
 $input-height: 50px;
-$input-padding: 0;
+$input-padding: 0rem;
 $input-margin: 0.5rem 0rem 0.5rem 0rem;
 
 $input-radio-margin-left: 150px;
@@ -52,7 +54,8 @@ form {
 		width: $input-width;
 		margin: $input-margin;
 	}
-	[type="submit"] {
+	[type="submit"],
+	.submit {
 		width: $button-width;
 		height: $button-height;
 		background: $button-background-primary;
@@ -72,7 +75,8 @@ form {
 			border: $button-border-hover;
 		}
 	}
-	[type="reset"] {
+	[type="reset"],
+	.reset {
 		width: $button-width;
 		height: $button-height;
 		background: $button-background-default;

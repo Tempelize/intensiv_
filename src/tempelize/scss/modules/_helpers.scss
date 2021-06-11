@@ -11,14 +11,17 @@
 // .text-right
 // .text-justify
 // .center => centre un block dans un block grâce à margin: auto;
-// .line-separator => ligne de séparation
+// .line-separator => ligne de séparation à largeur fixe
+// .line-separator-auto => ligne de séparation de largeur auto
 //------------------------------------------------
 // VARIABLES
 //----------------------------------------------
 //lineSeparator
 $lineSeparatorWith: 100%;
 $lineSeparatorThick: 1px;
-$lineSeparatorMarginTop: 1rem;
+$lineSeparatorMarginTop: 2rem;
+$lineSeparatorMarginBottom: 2rem;
+
 $lineSeparatorColor: $color-neutral-2;
 //-----------------------------------------------
 // MODULE SPECIFICATIONS
@@ -66,13 +69,16 @@ $lineSeparatorColor: $color-neutral-2;
 .line-separator {
 	border-bottom: $lineSeparatorThick solid;
 	width: $lineSeparatorWith;
-	margin: $lineSeparatorMarginTop;
+	margin: auto;
+	margin-top: $lineSeparatorMarginTop;
+	margin-bottom: $lineSeparatorMarginBottom;
 	color: $lineSeparatorColor;
 }
 .line-separator-auto {
 	border-bottom: $lineSeparatorThick solid;
 	width: auto;
-	margin: $lineSeparatorMarginTop;
+	margin-top: $lineSeparatorMarginTop;
+	margin-bottom: $lineSeparatorMarginBottom;
 	color: $lineSeparatorColor;
 }
 .is-actif {
