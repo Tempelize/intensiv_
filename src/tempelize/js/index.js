@@ -1,0 +1,1 @@
+import  catch_typo from './components/_affichage_typo';

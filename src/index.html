@@ -9,7 +9,7 @@
 		<title>Intensiv'</title>
 	</head>
 	<body>
-		<div class="container-principal background-special container">
+		<div class="container-principal background-special">
 			<header>
 				<h1 class="text-center text-color-neutral-1">
 					<span class="display-block">THIS IS</span>
@@ -28,16 +28,19 @@
 				</h1>
 			</header>
 
-			<div class="container-secondaire background-color-blanc">
+			<div class="container-secondaire background-color-blanc container">
+				<div class="menu-hamburger">
+					<a class="text-color-neutral-1"><i class="fas fa-bars icon-xxl text-color-neutral-1"></i>MENU</a>
+				</div>
 				<div class="navigation-header background-special-2">
-					<nav class="menu-horizontal display-inline-block">
-						<ul>
+					<nav>
+						<ul class="menu-horizontal-flex">
 							<li><a class="text-color-neutral-1 is-actif" href="./index.html">THIS IS INTENSIV'</a></li>
 							<li><a class="text-color-neutral-1" href="./posts.html">GENERIC PAGE</a></li>
 							<li><a class="text-color-neutral-1" href="./elements.html">ELEMENTS REFERENCE</a></li>
 						</ul>
 					</nav>
-					<ul class="menu-horizontal display-inline-block">
+					<ul class="menu-horizontal-flex">
 						<li>
 							<a href="#"><i class="fab fa-twitter text-color-neutral-1"></i></a>
 						</li>
@@ -259,19 +262,19 @@
 									<p class="title-2 display-inline-block" style="margin-left: 25px">SOCIAL</p>
 									<ul class="menu-horizontal display-inline-block" style="margin-left: 70px">
 										<li>
-											<a href="#"><i class="fab fa-twitter cercle"></i></a>
+											<a href="#"><i class="fab fa-twitter circle"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="fab fa-facebook-f cercle"></i></a>
+											<a href="#"><i class="fab fa-facebook-f circle"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="fab fa-instagram cercle"></i></a>
+											<a href="#"><i class="fab fa-instagram circle"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="fab fa-github cercle"></i></a>
+											<a href="#"><i class="fab fa-github circle"></i></a>
 										</li>
 										<li>
-											<a href="#"><i class="fas fa-basketball-ball cercle"></i></a>
+											<a href="#"><i class="fas fa-basketball-ball circle"></i></a>
 										</li>
 									</ul>
 								</div>
@@ -293,6 +296,7 @@
 			</div>
 		</div>
 		<!-- fin container principal-->
+		<script src="./tempelize/js/index.js"></script>
 		<script src="./app.js"></script>
 	</body>
 </html>

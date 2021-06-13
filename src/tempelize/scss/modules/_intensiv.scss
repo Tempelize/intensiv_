@@ -7,9 +7,11 @@
 	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 25px;
+	position: relative;
+
 	.container-secondaire {
 		// background: red;
-		width: 98%;
+		width: 100%;
 		margin: auto;
 		margin-top: 100px;
 		margin-bottom: 100px;
@@ -30,28 +32,111 @@
 		}
 	}
 }
+
+.menu-hamburger {
+	display: block;
+	position: fixed;
+	top: 1rem;
+	right: 1rem;
+	a {
+		i {
+			margin-right: 1rem;
+		}
+	}
+	// DISPARITION DU MENU HAMBURGER AU DESSUS DE 992PX
+	@media screen and (min-width: 991px) {
+		display: none;
+	}
+	&.menu-smart {
+		display: block;
+		// z-index: 1;
+	}
+}
+
 .navigation-header {
+	display: block;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+
 	nav {
+		//Navigation principale
 		ul {
 			margin: 0 0.5rem 0 0;
 			li {
+				margin-right: 0;
 				a {
-					padding: 0.5rem;
+					padding: 1rem;
 				}
-			}
-			li:not(.is-actif):hover {
-				// background: lighten($color-hot, 35%);
+				&:hover :not(.is-actif) {
+					background: lighten($color-1, 5%);
+					color: $color-neutral-1;
+				}
 			}
 		}
 	}
-
+	// Navigation icone
 	ul {
 		margin: 0 0.5rem 0 0.5rem;
 		padding-right: 1rem;
 	}
+	// DISPARITION DU MENU CLASSIQUE JUSQUE 992PX à modifier avec map
+	@media screen and (max-width: 990px) {
+		display: none;
+	}
+	// Menu visible smartphone
+	&.menu-smart {
+		background: $color-neutral-1;
+		width: 300px;
+		height: 100vh;
+		position: fixed;
+		top: 0.5rem;
+		right: 0.5rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		align-items: center;
+		// z-index: 0;
+		// Navigation principale
+		nav {
+			margin-top: 1rem;
+			ul {
+				padding: 0;
+				display: flex;
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+				li {
+					margin: 0;
+					padding: 2rem;
+					a {
+						color: $color-text;
+						// padding: 2rem;
+					}
+					&:hover {
+						color: $color-hot;
+					}
+				}
+			}
+		}
+		// Navigation icones
+		ul {
+			li {
+				a {
+					i {
+						color: $color-text;
+					}
+				}
+				&:hover i {
+					color: $color-hot;
+				}
+			}
+		}
+	}
+}
+
+.container-footer {
+	// padding: 2rem 0 2rem 0;
 }
 
 .bas-de-page {
@@ -78,7 +163,7 @@
 // SURCHARGE INDEX.HTML INTENSIV'
 
 #post-mis-en-avant-auteur {
-	min-width: 285px;
+	min-width: 250px;
 }
 .card {
 	margin: 6rem 0 6rem 0;

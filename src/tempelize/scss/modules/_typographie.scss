@@ -68,8 +68,8 @@
 // $font-header: "futura";
 // $font-text: "Source Sans Pro", sans serif;
 // $font-header: "Open Sans", sans-serif;
-$font-header: "Source Sans Pro", sans-serif;
-$font-text: "Merriweather Sans", sans-serif;
+$font-text: "Source Sans Pro", sans-serif;
+$font-header: "Merriweather Sans", sans-serif;
 
 // DEFAULT BODY
 $font-color-default: $color-text;
@@ -309,6 +309,7 @@ $q-padding-left: 1rem;
 $icon-s: 10px;
 $icon-l: 25px;
 $icon-xl: 35px;
+$icon-xxl: 50px;
 
 //-------------------------------------------------------------------------------------------------------------
 // MODULE DEFAULT SPECIFICATIONS
@@ -573,4 +574,7 @@ q {
 }
 .icon-xl {
 	font-size: $icon-xl;
+}
+.icon-xxl {
+	font-size: $icon-xxl;
 }

@@ -1,9 +1,9 @@
-// RECHERCHE POLICE 1 ET POLICE 2
-const police1 = window.getComputedStyle(document.getElementById("police-font-text")).fontFamily;
-const police2 = window.getComputedStyle(document.getElementById("police-font-header")).fontFamily;
-
-// MODIFICATION DU TEXTE
-document.getElementById("police-font-text").innerText = police1;
-document.getElementById("police-font-header").innerText = police2;
-
-
+document.querySelector('.menu-hamburger').onclick=function(e){
+   e.preventDefault();
+   document.querySelector('.navigation-header').classList.toggle('menu-smart');
+   document.querySelector('.menu-hamburger').classList.toggle('menu-smart');
+   e.onblur=function(){
+   document.querySelector('.navigation-header').classList.remove('menu-smart');
+   document.querySelector('.menu-hamburger').classList.remove('menu-smart');
+   };
+};

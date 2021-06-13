@@ -8,20 +8,23 @@
 		<link rel="stylesheet" href="./app.scss" />
 	</head>
 	<body>
-		<div class="container-principal background-special container">
+		<div class="container-principal background-special">
 			<header>
 				<h1 class="text-center"><span class="text-color-neutral-1 box-border-5 border-color-neutral-1">INTENSIV'</span></h1>
 			</header>
-			<div class="container-secondaire background-color-blanc">
+			<div class="container-secondaire container background-color-blanc">
+				<div class="menu-hamburger">
+					<a class="text-color-neutral-1"><i class="fas fa-bars icon-xxl text-color-neutral-1"></i>MENU</a>
+				</div>
 				<div class="navigation-header background-special-2">
-					<nav class="menu-horizontal display-inline-block">
-						<ul>
+					<nav>
+						<ul class="menu-horizontal-flex">
 							<li><a class="text-color-neutral-1" href="./index.html">THIS IS INTENSIV'</a></li>
 							<li><a class="text-color-neutral-1" href="./posts.html">GENERIC PAGE</a></li>
 							<li><a class="text-color-neutral-1 is-actif" href="./elements.html">ELEMENTS REFERENCE</a></li>
 						</ul>
 					</nav>
-					<ul class="menu-horizontal display-inline-block">
+					<ul class="menu-horizontal-flex">
 						<li>
 							<a href="#"><i class="fab fa-twitter text-color-neutral-1"></i></a>
 						</li>
@@ -221,6 +224,7 @@
 										unde minima laborum dignissimos tempora possimus natus accusamus fuga dolorum odio!
 									</dd>
 								</dl>
+							</div>
 						</section>
 						<div class="line-separator"></div>
 						<!-- BLOQUECOTE -->
@@ -591,6 +595,7 @@
 			</div>
 		</div>
 		<!-- fin container principal-->
+		<script src="./tempelize/js/index.js"></script>
 		<script src="./app.js"></script>
 	</body>
 </html>

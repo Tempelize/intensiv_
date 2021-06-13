@@ -19,11 +19,12 @@ $li-color-alternate: $color-2;
 $li-color-alternate-hover: $color-hot; //lighten($li-color-alternate, 20%);
 
 $menu-horizontal-margin-right: 1rem;
+// $menu-horizontal-flex-margin-right: 2rem;
 
 $dt-margin-left: 0px;
 $dd-margin-left: 25px;
-$dt-color: color-text; //$color-1;
-$dd-color: color-text; //$color-hot;
+$dt-color: $color-text; //$color-1;
+$dd-color: $color-text; //$color-hot;
 //--------------------------------------
 // MODULE SPECIFICATIONS
 ul {
@@ -89,6 +90,26 @@ ol {
 		margin-right: $menu-horizontal-margin-right;
 	}
 }
+
+.menu-horizontal-flex {
+	display: flex;
+	// padding: 0;
+	justify-content: flex-start;
+	li {
+		list-style: none;
+		text-decoration: none;
+		a {
+			display: block;
+			padding: 0 0.5rem 0 0.5rem;
+			text-decoration: none;
+		}
+	}
+
+	&:not(:last-of-type) {
+		// margin-right: $menu-horizontal-margin-right;
+	}
+}
+
 //////////// &&&&&&&&&& A TERMINER
 // PAGINATION
 .pagination {
