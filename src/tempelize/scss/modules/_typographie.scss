@@ -35,9 +35,11 @@
 // .bold => <strong></strong>
 // .italic => en italic
 // .underlined => soulignement
+
 // .link => <a></a> liens
 // .disabled => liens sans effet hover
 // .active => liens avec effet hover fixe
+
 // // TITRES - SOUS-TITRES - PARAGRAPHES
 // .title-1 => typo titre niveau 1
 // .title-2
@@ -59,6 +61,7 @@
 // .icon-s => taille icone fontawesome = font-size: x px;
 // .icon-l
 // .icon-xl
+// .icon-xxl
 
 //----------------------------------------------------------------------
 // VARIABLES
@@ -68,8 +71,8 @@
 // $font-header: "futura";
 // $font-text: "Source Sans Pro", sans serif;
 // $font-header: "Open Sans", sans-serif;
-$font-text: "Source Sans Pro", sans-serif;
-$font-header: "Merriweather Sans", sans-serif;
+$font-header: "Source Sans Pro", sans-serif;
+$font-text: "Merriweather Sans", sans-serif;
 
 // DEFAULT BODY
 $font-color-default: $color-text;
@@ -86,52 +89,59 @@ $font-header-letter-spacing-default: 0rem;
 $font-header-margin-default: 0 0 0.7rem 0;
 
 // h1
+$font-size-h1: 3rem;
+
 $font-h1: $font-header-default;
 $font-color-h1: $font-header-color-default;
 $font-weight-h1: $font-header-weight-default;
 $letter-spacing-h1: $font-header-letter-spacing-default;
 $margin-h1: $font-header-margin-default;
-$font-size-h1: 3rem;
 $line-height-h1: 1.5;
 //h2
+$font-size-h2: 2.5rem;
+
 $font-h2: $font-header-default;
 $font-color-h2: $font-header-color-default;
 $font-weight-h2: $font-header-weight-default;
 $letter-spacing-h2: $font-header-letter-spacing-default;
 $margin-h2: $font-header-margin-default;
-$font-size-h2: 2.5rem;
 $line-height-h2: 1.5;
 //h3
+$font-size-h3: 2rem;
+
 $font-h3: $font-header-default;
 $font-color-h3: $font-header-color-default;
 $font-weight-h3: $font-header-weight-default;
 $letter-spacing-h3: $font-header-letter-spacing-default;
 $margin-h3: $font-header-margin-default;
-$font-size-h3: 2rem;
 $line-height-h3: 1.5;
 //h4
+$font-size-h4: 1.7rem;
+
 $font-h4: $font-header-default;
 $font-color-h4: $font-header-color-default;
 $font-weight-h4: $font-header-weight-default;
 $letter-spacing-h4: $font-header-letter-spacing-default;
 $margin-h4: $font-header-margin-default;
-$font-size-h4: 1.7rem;
 $line-height-h4: 1.2;
 //h5
+$font-size-h5: 1.5rem;
+
 $font-h5: $font-header-default;
 $font-color-h5: $font-header-color-default;
 $font-weight-h5: $font-header-weight-default;
 $letter-spacing-h5: $font-header-letter-spacing-default;
 $margin-h5: $font-header-margin-default;
-$font-size-h5: 1.5rem;
 $line-height-h5: 1.2;
+
 //h6
+$font-size-h6: 1.3rem;
+
 $font-h6: $font-header-default;
 $font-color-h6: $font-header-color-default;
 $font-weight-h6: $font-header-weight-default;
 $letter-spacing-h6: $font-header-letter-spacing-default;
 $margin-h6: $font-header-margin-default;
-$font-size-h6: 1.3rem;
 $line-height-h6: 1.2;
 ///////////////////////////////////////////////////////////////////////////////////////
 //
@@ -139,7 +149,6 @@ $line-height-h6: 1.2;
 // VARIABLES TITRES DEFAULT
 $font-title-font-default: $font-text;
 $font-title-color-default: $color-text;
-$font-title-weight-default: 500;
 $font-title-letter-spacing-default: 0rem;
 $font-title-margin-default: 0 0 0.7rem 0;
 $font-title-line-height-default: 1.65;
@@ -147,10 +156,10 @@ $font-title-style-default: normal;
 $font-title-text-decoration-default: none;
 // VARIABLES TITRE-1
 $title-1-font-size: 1.35rem;
+$title-1-font-weight: 500;
 
 $title-1-font: $font-title-font-default;
 $title-1-color: $font-title-color-default;
-$title-1-font-weight: $font-title-weight-default;
 $title-1-letter-spacing: $font-title-letter-spacing-default;
 $title-1-margin: $font-title-margin-default;
 $title-1-line-height: $font-title-line-height-default;
@@ -158,21 +167,21 @@ $title-1-style: $font-title-style-default;
 $title-1-text-decoration: $font-title-text-decoration-default;
 // VARIABLES TITRE-2
 $title-2-font-size: 1.25rem;
+$title-2-font-weight: 300;
 
 $title-2-font: $font-title-font-default;
 $title-2-color: $font-title-color-default;
-$title-2-font-weight: $font-title-weight-default;
 $title-2-letter-spacing: $font-title-letter-spacing-default;
 $title-2-margin: $font-title-margin-default;
 $title-2-line-height: $font-title-line-height-default;
 $title-2-style: $font-title-style-default;
 $title-2-text-decoration: $font-title-text-decoration-default;
 // VARIABLES TITRE-3
-$title-3-font-size: 1.19rem;
+$title-3-font-size: 1.15rem;
+$title-3-font-weight: 200;
 
 $title-3-font: $font-title-font-default;
 $title-3-color: $font-title-color-default;
-$title-3-font-weight: $font-title-weight-default;
 $title-3-letter-spacing: $font-title-letter-spacing-default;
 $title-3-margin: $font-title-margin-default;
 $title-3-line-height: $font-title-line-height-default;

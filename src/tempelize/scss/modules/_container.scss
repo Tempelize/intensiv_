@@ -6,7 +6,7 @@
 // .m
 // .l
 // .xl
-// .box-border-0 à 10 =>  box dans son container avec bordure de 0px à 10px et padding
+// .box-border-0 à 10 =>  box dans son container avec bordure de 0px à 10px et padding default
 
 // .box-stretch-width-0 à 100 (%) => étendue en % de la largeur de la boite dans son container
 // .box-stretch-height-0 à 100 (%) => étendue en % de la hauteur de la boite dans son container (la hauteur de son container doit être fixée)
@@ -17,6 +17,7 @@
 // .flex => display: flex et justify content : center par défaut
 // .flex-center => justify-content: center
 // .flex-start => justify-content : start;
+// .flex-end => justify-contend : end;
 // .flex-between => justify-content : space-between;
 // .flex-wrap => flex-wrap: wrap;
 // .align-center => align-items: center;
@@ -25,10 +26,10 @@
 //-------------------------------------------------------------------------------
 // VARIABLES
 $box-width-default: 100%;
-$box-border-color: $color-neutral-2;
-$box-border-type: solid;
-$box-border-radius: 0px; //$border-radius-default;
-$box-padding: 1rem;
+$box-border-color-default: $color-neutral-2;
+$box-border-type-default: solid;
+$box-border-radius-default: 0px; //$border-radius-default;
+$box-padding-default: 1rem;
 
 $pre-border-background: $color-neutral-1;
 $pre-border-color: $color-text;
@@ -92,12 +93,13 @@ $flex-margin-default: 0.2rem;
 @for $var from 0 through 10 {
 	.box-border-#{$var} {
 		width: $box-width-default;
-		border: $box-border-type #{$var}px;
-		border-color: $box-border-color;
-		border-radius: $box-border-radius;
-		padding: $box-padding;
+		border: $box-border-type-default #{$var}px;
+		border-color: $box-border-color-default;
+		border-radius: $box-border-radius-default;
+		padding: $box-padding-default;
 	}
 }
+
 .border-color-hot {
 	border-color: $color-hot;
 }
@@ -148,9 +150,13 @@ $flex-margin-default: 0.2rem;
 	&.flex-between {
 		justify-content: space-between;
 	}
+	&.flex-end {
+		justify-content: end;
+	}
 	&.flex-wrap {
 		flex-wrap: wrap;
 	}
+
 	&.align-center {
 		align-items: center;
 	}

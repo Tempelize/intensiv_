@@ -44,10 +44,10 @@ $table-ligne-background: $color-neutral-1;
 $table-ligne-background-alternate: darken($color-neutral-1, 20%);
 $table-ligne-color-alternate: $color-text;
 // HOVER
-$table-ligne-background-hover: $color-hot; //darken($color-neutral-1, 30%);
-$table-ligne-background-alternate-hover: $color-hot; //darken($color-neutral-1, 30%);
-$table-ligne-color-hover: $color-neutral-1; //lighten($color-text, 80%);
-$table-ligne-color-alternate-hover: $color-neutral-1;
+$table-ligne-background-hover: $table-ligne-background; //$color-hot; //darken($color-neutral-1, 30%);
+$table-ligne-background-alternate-hover: $table-ligne-background-alternate; //$color-hot; //darken($color-neutral-1, 30%);
+$table-ligne-color-hover: $table-celulle-color; //$color-neutral-1; //lighten($color-text, 80%);
+$table-ligne-color-alternate-hover: $table-celulle-color; //$color-text; //$color-neutral-1;
 
 //-------------------------------------------------------------------------------------------------------------
 // MODULE SPECIFICATIONS
@@ -84,7 +84,7 @@ table {
 	tr {
 		background-color: $table-ligne-background;
 		&:hover {
-			background: $table-ligne-background-hover;
+			background-color: $table-ligne-background-hover;
 			> * {
 				color: $table-ligne-color-hover;
 			}
@@ -96,11 +96,11 @@ table {
 			> * {
 				color: $table-ligne-color-alternate;
 			}
-		}
-		tr:hover {
-			background: $table-ligne-background-alternate-hover;
-			> * {
-				color: $table-ligne-color-alternate-hover;
+			&:hover {
+				background-color: $table-ligne-background-alternate-hover;
+				> * {
+					color: $table-ligne-color-alternate-hover;
+				}
 			}
 		}
 	}

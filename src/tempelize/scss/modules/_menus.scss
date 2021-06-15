@@ -4,6 +4,7 @@
 // .list-style-none => suppression puces
 // .alternate => background différent une ligne sur deux
 // .menu-horizontal => pour placer un ul>li horizontalement
+// .menu-horizontal-flex => menu horizontal en flex (.flex-start (defaut), .flex-center, .flex-end, .flex-between
 // .pagination pour obtenir une pagination à l'aide d'un ul>li>a
 //------------------------------------
 // VARIABLES
@@ -104,9 +105,14 @@ ol {
 			text-decoration: none;
 		}
 	}
-
-	&:not(:last-of-type) {
-		// margin-right: $menu-horizontal-margin-right;
+	&.flex-end {
+		justify-content: end;
+	}
+	&.flex-center {
+		justify-content: center;
+	}
+	&.flex-between {
+		justify-content: space-between;
 	}
 }
 
@@ -121,7 +127,7 @@ ol {
 		border-top: solid 1px;
 		border-bottom: solid 1px;
 		a {
-			display: inline-block;
+			display: block;
 			padding: 0.5rem 1rem 0.5rem 1rem;
 		}
 		&.active a {

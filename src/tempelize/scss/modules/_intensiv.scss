@@ -136,7 +136,17 @@
 }
 
 .container-footer {
-	// padding: 2rem 0 2rem 0;
+	.container-address {
+		@media screen and (min-width: 768px) {
+			//affichage bordure left au dessus de 768px du bloc address
+			border-left: solid 1px;
+		}
+	}
+	.container-social-footer {
+		// padding: 5rem 0 5rem 0;
+		// margin-bottom: 10rem;
+		// align-items: center;
+	}
 }
 
 .bas-de-page {
@@ -163,7 +173,7 @@
 // SURCHARGE INDEX.HTML INTENSIV'
 
 #post-mis-en-avant-auteur {
-	min-width: 250px;
+	min-width: 293px;
 }
 .card {
 	margin: 6rem 0 6rem 0;

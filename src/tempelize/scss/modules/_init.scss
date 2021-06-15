@@ -43,6 +43,8 @@ $screen-sizes: (
 
 //    OTHERS -----------
 $border-radius-default: 0px;
+
+// RESET CSS
 // PADDING  figure ETC ...
 figure {
 	padding-left: 0;
@@ -50,4 +52,9 @@ figure {
 
 * {
 	box-sizing: border-box;
+}
+body {
+	overflow-wrap: break-word;
+	margin: 0;
+	padding: 0;
 }

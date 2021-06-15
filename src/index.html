@@ -96,7 +96,7 @@
 				<!-- fin container-contenu  -->
 				<!-- retour dans container secondaire  -->
 				<section class="container-articles grid">
-					<article class="xl-col-6 article-details article-details__details1">
+					<article class="m-col-6 article-details article-details__details1">
 						<div class="card">
 							<div class="card-time-auteur text-center">
 								<time datetime="2017-04-25">April 25, 2017</time>
@@ -114,7 +114,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="xl-col-6 article-details">
+					<article class="m-col-6 article-details">
 						<div class="card">
 							<div class="card-time-auteur text-center">
 								<time datetime="2017-04-25">April 25, 2017</time>
@@ -132,7 +132,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="xl-col-6 article-details article-details__details1">
+					<article class="m-col-6 article-details article-details__details1">
 						<div class="card">
 							<div class="card-time-auteur text-center">
 								<time datetime="2017-04-25">April 25, 2017</time>
@@ -150,7 +150,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="xl-col-6 article-details">
+					<article class="m-col-6 article-details">
 						<div class="card">
 							<div class="card-time-auteur text-center">
 								<time datetime="2017-04-25">April 25, 2017</time>
@@ -168,7 +168,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="xl-col-6 article-details article-details__details1">
+					<article class="m-col-6 article-details article-details__details1">
 						<div class="card">
 							<div class="card-time-auteur text-center">
 								<time datetime="2017-04-25">April 25, 2017</time>
@@ -186,7 +186,7 @@
 							</div>
 						</div>
 					</article>
-					<article class="xl-col-6 article-details">
+					<article class="m-col-6 article-details">
 						<div class="card">
 							<div class="card-time-auteur text-center">
 								<time datetime="2017-04-25">April 25, 2017</time>
@@ -208,7 +208,7 @@
 				<!-- paggination	 -->
 				<section>
 					<ol class="pagination">
-						<li><a class="disabled" href="#">PREV</a></li>
+						<li><a class="disabled" href="#"> &#60;&#60; </a></li>
 						<li><a class="active" href="#">1</a></li>
 						<li><a href="#">2</a></li>
 						<li><a href="#">3</a></li>
@@ -216,24 +216,24 @@
 						<li><a href="#">5</a></li>
 						<li><a href="#">6</a></li>
 						<li><a href="#">7</a></li>
-						<li><a class="disabled" href="#">NEXT</a></li>
+						<li><a class="" href="#"> &#62;&#62; </a></li>
 					</ol>
 				</section>
 				<!-- FOOTER PRINCIPAL ET REUTILISABLE -->
 				<footer>
 					<div class="container-footer background-color-neutral-1 grid">
-						<div class="xl-col-6">
+						<div class="m-col-6">
 							<form action="./index.html" method="GET">
 								<div>
-									<label class="display-block" for="nom-2">NAME</label>
+									<label class="display-block title-2" for="nom-2">NAME</label>
 									<input id="nom-2" type="text" name="name" />
 								</div>
 								<div>
-									<label class="display-block" for="email-2">EMAIL</label>
+									<label class="display-block title-2" for="email-2">EMAIL</label>
 									<input type="email" name="email" id="email-2" />
 								</div>
 								<div>
-									<label for="message-2">MESSAGE</label>
+									<label for="message-2" class="title-2">MESSAGE</label>
 									<textarea name="message" id="message-2" cols="30" rows="40"> </textarea>
 								</div>
 								<div>
@@ -242,41 +242,50 @@
 							</form>
 						</div>
 						<!-- ADDRESSE FOOTER -->
-						<div class="xl-col-6">
+						<div class="m-col-6 container-address">
 							<address>
-								<div class="box-border-1 box-height-100" style="border-right: 0; border-bottom: 0; border-top: 0">
-									<p class="title-2 display-inline-block" style="margin-left: 25px">ADDRESS</p>
-									<p class="title-3 display-inline-block" style="margin-left: 50px">9 rue Charles Deliège 4247</p>
-									<p class="title-3 display-inline-block" style="margin-left: 170px">Fléron, TN 00000-0000</p>
+								<div class="box-border-0">
+									<div class="flex flex-between flex-wrap" style="margin-left: 25px">
+										<p class="title-2">ADDRESS</p>
+										<div>
+											<p class="title-3">9 rue Charles Deliège 4247</p>
+											<p class="title-3">Fléron, TN 00000-0000</p>
+										</div>
+									</div>
 								</div>
-								<div class="box-border-1 box-height-100" style="border-right: 0; border-bottom: 0">
-									<p class="title-2 display-inline-block" style="margin-left: 25px">PHONE</p>
-									<a class="title-3" href="tel:+320000000" style="margin-left: 70px">+32000000000</a>
+								<div class="box-border-1" style="border-right: 0; border-bottom: 0; border-left: 0">
+									<div class="flex flex-between" style="margin-left: 25px">
+										<p class="title-2">PHONE</p>
+										<a class="title-3 display-block" href="tel:+320000000">+32000000000</a>
+									</div>
 								</div>
-
-								<div class="box-border-1 box-height-100" style="border-right: 0; border-bottom: 0">
-									<p class="title-2 display-inline-block" style="margin-left: 25px">EMAIL</p>
-									<a href="mailto:info@untilted.tld" style="margin-left: 70px">mailto:info@untilted.tld</a>
+								<div class="box-border-1" style="border-right: 0; border-bottom: 0; border-left: 0">
+									<div class="flex flex-between" style="margin-left: 25px">
+										<p class="title-2">EMAIL</p>
+										<a class="title-3 display-block" href="mailto:info@untilted.tld">mailto:info@untilted.tld</a>
+									</div>
 								</div>
-								<div class="box-border-1 box-height-100" style="border-right: 0; border-bottom: 0">
-									<p class="title-2 display-inline-block" style="margin-left: 25px">SOCIAL</p>
-									<ul class="menu-horizontal display-inline-block" style="margin-left: 70px">
-										<li>
-											<a href="#"><i class="fab fa-twitter circle"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fab fa-facebook-f circle"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fab fa-instagram circle"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fab fa-github circle"></i></a>
-										</li>
-										<li>
-											<a href="#"><i class="fas fa-basketball-ball circle"></i></a>
-										</li>
-									</ul>
+								<div class="container-social-footer box-border-1" style="border-right: 0; border-bottom: 0; border-left: 0">
+									<div class="flex flex-between flex-wrap" style="margin-left: 25px">
+										<p class="title-2">SOCIAL</p>
+										<ul class="menu-horizontal-flex">
+											<li>
+												<a href="#"><i class="fab fa-twitter circle"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-facebook-f circle"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-instagram circle"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fab fa-github circle"></i></a>
+											</li>
+											<li>
+												<a href="#"><i class="fas fa-basketball-ball circle"></i></a>
+											</li>
+										</ul>
+									</div>
 								</div>
 							</address>
 						</div>

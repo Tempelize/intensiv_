@@ -13,6 +13,7 @@
 // .center => centre un block dans un block grâce à margin: auto;
 // .line-separator => ligne de séparation à largeur fixe
 // .line-separator-auto => ligne de séparation de largeur auto
+// .is-actif => détermine le background d'un élément actif
 //------------------------------------------------
 // VARIABLES
 //----------------------------------------------
@@ -23,6 +24,8 @@ $lineSeparatorMarginTop: 2rem;
 $lineSeparatorMarginBottom: 2rem;
 
 $lineSeparatorColor: $color-neutral-2;
+
+$isActif-background-color-default: $color-neutral-1;
 //-----------------------------------------------
 // MODULE SPECIFICATIONS
 
@@ -82,5 +85,5 @@ $lineSeparatorColor: $color-neutral-2;
 	color: $lineSeparatorColor;
 }
 .is-actif {
-	background-color: $color-neutral-1;
+	background-color: $isActif-background-color-default;
 }
